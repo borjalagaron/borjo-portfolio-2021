@@ -1,9 +1,13 @@
-import "./App.css";
+import React from 'react';
+import Navbar from './components/Navbar/Navbar';
+import Hero from './components/Hero/Hero';
+import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h2>Hols</h2>
+      <Navbar />
+      <Hero number={1054} />
     </div>
   );
 }

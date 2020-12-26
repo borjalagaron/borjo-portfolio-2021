@@ -1,7 +1,7 @@
-const MenuItems = [
+export const MenuItems = [
   {
     title: 'Home',
-    url: '#',
+    url: 'Home',
     cName: 'nav-links',
   },
   {
@@ -10,13 +10,13 @@ const MenuItems = [
     cName: 'nav-links',
   },
   {
-    title: 'Dev',
-    url: '#',
-    cName: 'nav-links',
-  },
-  {
     title: 'UX',
     url: '#',
     cName: 'nav-links',
   },
+  {
+    title: 'FrontEnd',
+    url: '#',
+    cName: 'nav-links',
+  }
 ];

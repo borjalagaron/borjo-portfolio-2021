@@ -1,0 +1,93 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100vh - 80px);
+  padding: 1em;
+  box-sizing: border-box;
+  color: black;
+  background: url('../../images/borjo-hero.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+.hero-text {
+  max-width: 50vw;
+  margin: 0;
+  padding-left: 2rem;
+  font-weight: bold;
+}
+
+.hero-title {
+  font-size: 4rem;
+  padding-bottom: 0.5rem;
+}
+
+.hero-undertitle {
+  font-size: 0.8rem;
+  padding-bottom: 2rem;
+}
+
+.hero-description {
+  font-size: 1 rem;
+}
+
+.underlined {
+  flex: 1;
+  line-height: 1.2;
+  text-decoration: none;
+  background-image: linear-gradient(to right, yellow 0, yellow 100%);
+  background-position: 0 1.2em;
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background 0.5s;
+}
+
+.underlined:hover {
+  background-size: 100% 100%;
+}
+
+.underlined--offset {
+  background-position: 0 0.2em;
+  box-shadow: inset 0 -0.5em 0 0 transparent;
+}
+
+.underlined--thick {
+  background-position: 0 -0.1em;
+}
+
+/* 
+.hero-text {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 50%;
+  max-height: 90%;
+}
+
+.hero-text .hero-text-1 {
+  font-size: 4rem;
+  padding-bottom: 0.5rem;
+}
+
+.hero-text .hero-text-2 {
+  font-size: 0.8rem;
+  padding-bottom: 2rem;
+}
+
+span {
+  background-image: linear-gradient(
+    transparent calc(65% - 5px),
+    darken(blue, 15%) 5px
+  );
+  background-size: 0;
+  background-repeat: no-repeat;
+  display: inline;
+  transition: 0.5s ease;
+}
+
+span:hover {
+  background-size: 100%;
+} */
