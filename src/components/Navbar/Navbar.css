@@ -6,7 +6,7 @@
   );
   height: 80px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   font-size: 1.2rem;
 }
@@ -24,8 +24,12 @@
 }
 
 .logo {
- 
   width: 40px;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .nav-menu {
@@ -34,7 +38,6 @@
   grid-gap: 10px;
   list-style: none;
   text-align: center;
-  width: 70vw;
   justify-content: end;
   margin-right: 2rem;
 }
