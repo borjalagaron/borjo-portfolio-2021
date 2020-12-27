@@ -6,7 +6,7 @@
   padding: 1em;
   box-sizing: border-box;
   color: black;
-  background: url('../../images/borjo-hero.jpg') center center no-repeat;
+  background: url('../../images/borjo-hero2.png') center center no-repeat;
   background-size: cover;
 }
 
@@ -30,6 +30,13 @@
 .hero-description {
   font-size: 1 rem;
 }
+
+.hero-description:hover .underlined {
+  background-size: 100% 100%;
+  background-position: 0 0.2em;
+  box-shadow: inset 0 -0.5em 0 0 transparent;
+}
+
 
 .underlined {
   flex: 1;
