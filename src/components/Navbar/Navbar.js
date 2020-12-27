@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { MenuItems } from './MenuItems';
 import './Navbar.css';
+import { ReactComponent as Logo } from '../../images/borjo-logo.svg';
 
 class Navbar extends Component {
   state = { clicked: false };
@@ -12,8 +13,9 @@ class Navbar extends Component {
   render() {
     return (
       <nav className="NavbarItems">
+        <Logo className="navbar-logo logo" />
         <h1 className="navbar-logo">
-          Borja Lagarón<i className="fab fa-react"></i>
+          
         </h1>
         <div className="menu-icon" onClick={this.handleClick}>
           <i

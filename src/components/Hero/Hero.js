@@ -22,13 +22,6 @@ const Hero = (props) => {
         </span>{' '}
         {t('hero.desc2')}
       </h3>
-      <h1>{t('alvaro')}</h1>
-      {/* <h2>Let's play with the thickness of this underline</h2> */}
-      {/* <p>
-        <span className="underlined underlined--offset">
-          I'm an other very long highlighted link.
-        </span>
-      </p> */}
     </div>
   );
 };
