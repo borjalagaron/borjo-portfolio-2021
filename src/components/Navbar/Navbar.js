@@ -28,11 +28,11 @@ class Navbar extends Component {
               );
             })}
           </ul>
-        </div>
-        <div className="menu-icon" onClick={this.handleClick}>
-          <i
-            className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}
-          ></i>
+          <div className="menu-icon" onClick={this.handleClick}>
+            <i
+              className={this.state.clicked ? 'fas fa-times fa-fw' : 'fas fa-bars fa-fw'}
+            ></i>
+          </div>
         </div>
       </nav>
     );
