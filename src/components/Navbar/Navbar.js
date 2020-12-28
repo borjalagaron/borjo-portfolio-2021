@@ -5,8 +5,6 @@ import borjoLogo from '../../images/borjo-logo.svg';
 import LanguageSelector from '../LanguageSelector.js';
 import {
   BrowserRouter as Router,
-  Switch,
-  Route,
   NavLink,
   Link,
 } from 'react-router-dom';

@@ -8,7 +8,7 @@ class Frontend extends Component {
       <div>
         <nav class="menu">
           <div class="menu__item">
-            <a class="menu__item-link">Showreel</a>
+            <a class="menu__item">Showreel</a>
             <div class="marquee">
               <div class="marquee__inner" aria-hidden="true">
                 <span>Showreel</span>
