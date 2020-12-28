@@ -8,7 +8,7 @@ export default function LanguageSelector() {
 
   // const languages = [
   //   { code: 'en', name: 'English'},
-  //   { code: 'es-ES', name: 'Русский'},
+  //   { code: 'es', name: 'Русский'},
   //   { code: 'de', name: 'Deutsch'}
   // ]
 
@@ -29,8 +29,8 @@ export default function LanguageSelector() {
         onClick={() => changeLanguage('en')}
       ></button>
       <button
-        className="lang-btn es-ES"
-        onClick={() => changeLanguage('es-ES')}
+        className="lang-btn es"
+        onClick={() => changeLanguage('es')}
       ></button>
       {/* <div className="lang-menu">
         <div className="selected-lang">XDXDD</div>
@@ -39,7 +39,7 @@ export default function LanguageSelector() {
             <a className="de">1</a>
           </li>
           <li>
-            <a className="es-ES"></a>
+            <a className="es"></a>
           </li>
           <li>
             <a className="en"></a>
