@@ -1,4 +1,3 @@
-// this component for contact page
 import React, { Component } from 'react';
 class About extends Component{
     render(){

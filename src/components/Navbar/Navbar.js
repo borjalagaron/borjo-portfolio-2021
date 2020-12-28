@@ -5,6 +5,8 @@ import borjoLogo from '../../images/borjo-logo.svg';
 import LanguageSelector from '../LanguageSelector.js';
 import {
   BrowserRouter as Router,
+  Switch,
+  Route,
   NavLink,
   Link,
 } from 'react-router-dom';
@@ -20,7 +22,7 @@ class Navbar extends Component {
     return (
       <nav className="NavbarItems">
         <Link to="/" className="navbar-logo logo">
-          <img src={borjoLogo} className="logo-image" alt="Logo" />
+          <img src={borjoLogo} className="logo-image"alt="Logo" />
         </Link>
         {/* <Logo className="navbar-logo logo" /> */}
         <div className="nav-content">
