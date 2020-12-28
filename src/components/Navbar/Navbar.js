@@ -22,7 +22,7 @@ class Navbar extends Component {
     return (
       <nav className="NavbarItems">
         <Link to="/" className="navbar-logo logo">
-          <img src={borjoLogo} alt="Logo" />
+          <img src={borjoLogo} className="logo-image" alt="Logo" />
         </Link>
         {/* <Logo className="navbar-logo logo" /> */}
         <div className="nav-content">
