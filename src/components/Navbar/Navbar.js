@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { MenuItems } from './MenuItems';
 import './Navbar.css';
-import { ReactComponent as Logo } from '../../images/borjo-logo.svg';
+import borjoLogo from '../../images/borjo-logo.svg';
 import LanguageSelector from '../LanguageSelector.js';
+import { Link, NavLink } from 'react-router-dom';
 
 class Navbar extends Component {
   state = { clicked: false };
@@ -14,11 +15,23 @@ class Navbar extends Component {
   render() {
     return (
       <nav className="NavbarItems">
-        <Logo className="navbar-logo logo" />
+        <Link to="/" className="navbar-logo logo">
+          <img src={borjoLogo} className="logo-image" alt="Logo" />
+        </Link>
+        {/* <Logo className="navbar-logo logo" /> */}
         <div className="nav-content">
           <LanguageSelector />
           <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
             {MenuItems.map((item, index) => {
+              return (
+                <li key={index}>
+                  <NavLink className={item.cName} to={item.url}>
+                    {item.title}
+                  </NavLink>
+                </li>
+              );
+            })}
+            {/* {MenuItems.map((item, index) => {
               return (
                 <li key={index}>
                   <a className={item.cName} href={item.url}>
@@ -26,11 +39,14 @@ class Navbar extends Component {
                   </a>
                 </li>
               );
-            })}
+            })} */}
           </ul>
+
           <div className="menu-icon" onClick={this.handleClick}>
             <i
-              className={this.state.clicked ? 'fas fa-times fa-fw' : 'fas fa-bars fa-fw'}
+              className={
+                this.state.clicked ? 'fas fa-times fa-fw' : 'fas fa-bars fa-fw'
+              }
             ></i>
           </div>
         </div>
