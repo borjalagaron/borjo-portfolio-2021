@@ -18,28 +18,19 @@ class Navbar extends Component {
         <Link to="/" className="navbar-logo logo">
           <img src={borjoLogo} className="logo-image" alt="Logo" />
         </Link>
-        {/* <Logo className="navbar-logo logo" /> */}
         <div className="nav-content">
           <LanguageSelector />
           <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
             {MenuItems.map((item, index) => {
               return (
                 <li key={index}>
-                  <NavLink className={item.cName} to={item.url}>
+                  <NavLink className={item.cName} to={item.url} onClick={this.handleClick}>
                     {item.title}
                   </NavLink>
                 </li>
               );
             })}
-            {/* {MenuItems.map((item, index) => {
-              return (
-                <li key={index}>
-                  <a className={item.cName} href={item.url}>
-                    {item.title}
-                  </a>
-                </li>
-              );
-            })} */}
+            
           </ul>
 
           <div className="menu-icon" onClick={this.handleClick}>

@@ -3,7 +3,7 @@ class UX extends Component {
   render() {
     return (
       <div>
-        <h1>Agile Page</h1>
+        <h1>UX Page</h1>
       </div>
     );
   }

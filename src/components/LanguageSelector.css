@@ -1,3 +1,7 @@
+:root {
+  --borjoBlack: #231f20;
+}
+
 .LanguageSelector {
   display: flex;
   justify-content: space-between;
@@ -11,11 +15,13 @@
   border: 0px;
   outline: 0;
   border-radius: 50%;
+  border-color: var(--borjoBlack);
+  border: 1px solid;
   margin-left: 10px;
   cursor: pointer;
 }
 
-.es-ES {
+.es {
   background: url(../images/flags/spain.svg) no-repeat;
 }
 
