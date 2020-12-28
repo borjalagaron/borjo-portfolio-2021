@@ -1,12 +1,12 @@
 {
   "test": "Prüfung",
   "title": "",
-  "alvaro": "Alvaro ist sehr schwul",
   "hero": {
-    "hello": "Hola, ich bin",
-    "pronuntiation": "Obwohl es entmutigend erscheinen mag, ist es super einfach! \nEs ist ausgesprochen / bohr-hah /",
+    "hello": "Hola,",
+    "pronuntiation": "Obwohl es entmutigend erscheint, ist es super einfach! \nEs ist / bohr-hah / ausgesprochen ",
     "desc1": "Ich bin ein",
     "productowner": "Product Owner",
-    "desc2": "und Agile Enthusiast mit Sitz in Stuttgart. \n7 Jahre in einer Softwareentwicklungsumgebung und auch als Entwickler erfahren. \nManchmal schreibe ich auch gerne, singe und mache lange Spaziergänge durch den Wald."
+    "desc2": "und Agile Enthusiast mit Sitz in Stuttgart. \n7 Jahre in einer Softwareentwicklungsumgebung und auch als Entwickler erfahren. \nManchmal schreibe ich auch gerne, singe und mache lange Spaziergänge durch den Wald.",
+    "iam": "ich bin"
   }
 }

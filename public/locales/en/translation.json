@@ -1,11 +1,11 @@
 {
   "test": "Test",
-  "alvaro": "Alvaro is gayyyyy",
   "hero": {
-    "hello": "Hola, I'm",
+    "hello": "Hola,",
     "pronuntiation": "Though it may seem daunting it’s super easy! It’s pronounced /bohr-hah/",
     "desc1": "I am a",
     "productowner": "Product Owner",
-    "desc2": "and Agile Enthusiast based in Stuttgart. 7+ years in a Software Development Environment and also experienced as a Developer. Sometimes I also enjoy writing, singing and taking long walks through the forest."
+    "desc2": "and Agile Enthusiast based in Stuttgart. 7+ years in a Software Development Environment and also experienced as a Developer. Sometimes I also enjoy writing, singing and taking long walks through the forest.",
+    "iam": "I am"
   }
 }

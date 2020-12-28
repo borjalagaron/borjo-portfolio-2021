@@ -34,20 +34,12 @@
   justify-content: flex-end;
 }
 
-.LanguageSelector {
-  background-color: black;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-right: 1rem;
-}
-
 .nav-menu {
   display: grid;
   grid-template-columns: repeat(5, auto);
   grid-gap: 10px;
   list-style: none;
-  text-align: center;
+  align-items: center;
   justify-content: end;
 }
 
@@ -110,7 +102,7 @@
 
   .menu-icon {
     display: flex;
-    text-align: center;
+    align-items: center;
     font-size: 1.8rem;
     cursor: pointer;
   }
