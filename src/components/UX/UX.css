@@ -1,5 +1,6 @@
 .UX {
   display: flex;
+  top: -80px;
   width: 100vw;
   height: calc(100vh - 80px);
   place-items: center;

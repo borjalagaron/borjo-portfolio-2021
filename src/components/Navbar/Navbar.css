@@ -22,6 +22,7 @@
 
 .logo {
   width: 40px;
+  height: 40px;
 }
 
 .logo-image {
@@ -43,9 +44,15 @@
   display: grid;
   grid-template-columns: repeat(5, auto);
   grid-gap: 10px;
-  list-style: none;
   align-items: center;
   justify-content: end;
+}
+
+.nav-list {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  list-style: none;
+  grid-gap: 10px;
 }
 
 .nav-link {
@@ -53,8 +60,12 @@
   text-decoration: none;
   padding: 0.5rem 1rem;
   box-shadow: inset 0 -3px 0 -1px var(--borjoBlack);
+  -webkit-transition: box-shadow 0.25s ease-in-out;
+  -moz-transition: box-shadow 0.25s ease-in-out;
+  -o-transition: box-shadow 0.25s ease-in-out;
   transition: box-shadow 0.25s ease-in-out;
   line-height: 40px;
+  isolation: isolate;
 }
 
 .nav-link.active {
@@ -65,8 +76,14 @@
 .nav-link:hover {
   box-shadow: inset 0 -40px 0 -1px var(--borjoBlack);
   color: white;
+}
+
+.nav-link-text.hover{
+  color:white;
   mix-blend-mode: difference;
 }
+
+
 
 .fa-bars {
   color: white;
@@ -77,6 +94,13 @@
 }
 
 .menu-icon {
+  display: none;
+}
+
+.nav-icons {
+  display: none;
+}
+.nav-icon {
   display: none;
 }
 
@@ -106,6 +130,15 @@
     z-index: 1;
   }
 
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    grid-gap: 10px;
+    margin: 10px;
+  }
+
   .logo-image {
     content: url('../../images/borjo-logo-inverted.svg');
   }
@@ -128,6 +161,32 @@
   .nav-link:hover {
     box-shadow: none;
     mix-blend-mode: normal;
+  }
+
+  .nav-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: grey;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .nav-icon:hover {
+    filter: brightness(125%);
   }
 
   .menu-icon {

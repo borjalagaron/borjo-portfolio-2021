@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import borjoLogo from '../../images/borjo-logo.svg';
 import './UX.css';
 
-import { useTranslation } from 'react-i18next';
-
 class UX extends Component {
   constructor(props) {
     super(props);

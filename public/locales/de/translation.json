@@ -1,6 +1,4 @@
 {
-  "test": "Prüfung",
-  "title": "",
   "hero": {
     "hello": "Hola,",
     "pronuntiation": "Obwohl es entmutigend erscheint, ist es super einfach! \nEs ist / bohr-hah / ausgesprochen ",
@@ -8,5 +6,8 @@
     "productowner": "Product Owner",
     "desc2": "und Agile Enthusiast mit Sitz in Stuttgart. \n7 Jahre in einer Softwareentwicklungsumgebung und auch als Entwickler erfahren. \nManchmal schreibe ich auch gerne, singe und mache lange Spaziergänge durch den Wald.",
     "iam": "ich bin"
+  },
+  "nav": {
+    "aboutme": "Über mich"
   }
 }

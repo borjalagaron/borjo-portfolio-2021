@@ -4,7 +4,7 @@
   "icons": [
     {
       "src": "borjo-logo.svg",
-      "sizes": "all sizes",
+      "sizes": "any",
       "type": "image/x-icon"
     }
   ],

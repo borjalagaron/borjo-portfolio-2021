@@ -10,8 +10,8 @@
 }
 
 .lang-btn {
-  width: 2.2rem;
-  height: 2.2rem;
+  width: 1.5rem;
+  height: 1.5rem;
   border: 0px;
   outline: 0;
   border-radius: 50%;
@@ -19,6 +19,11 @@
   border: 1px solid;
   margin-left: 10px;
   cursor: pointer;
+  transition: transform 330ms;
+}
+
+.lang-btn:hover {
+  transform: scale(1.2);
 }
 
 .es {

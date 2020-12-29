@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import './Home.css';
 
 const Home = () => {
-  const { t, tReady } = useTranslation();
+  const { t } = useTranslation();
   // or const [t, i18n] = useTranslation();
 
   return (
