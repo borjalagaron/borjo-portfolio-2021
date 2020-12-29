@@ -15,14 +15,17 @@ export default function LanguageSelector() {
       <button
         className="lang-btn de"
         onClick={() => changeLanguage('de')}
+        aria-label="Change to German"
       ></button>
       <button
         className="lang-btn en"
         onClick={() => changeLanguage('en')}
+        aria-label="Change to English"
       ></button>
       <button
         className="lang-btn es"
         onClick={() => changeLanguage('es')}
+        aria-label="Change to Spanish"
       ></button>
       {/* <div className="lang-menu">
         <div className="selected-lang">XDXDD</div>

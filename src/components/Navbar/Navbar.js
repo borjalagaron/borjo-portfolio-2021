@@ -16,7 +16,7 @@ class Navbar extends Component {
     return (
       <nav className="NavbarItems">
         <Link to="/" className="navbar-logo logo">
-          <img src={borjoLogo} className="logo-image" alt="Logo" />
+          <img src={borjoLogo} width="40" height="40" className="logo-image" alt="Logo" />
         </Link>
         <div className="nav-content">
           <LanguageSelector />
