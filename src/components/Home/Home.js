@@ -1,4 +1,5 @@
 import React from 'react';
+import i18n from '../../i18n';
 import { useTranslation } from 'react-i18next';
 
 import './Home.css';
@@ -31,7 +32,10 @@ const Home = () => {
           </div>
         </b>
       </div>
-      <h2 className="hero-text hero-undertitle">{t('hero.pronuntiation')}</h2>
+      {i18n.language !== 'es' ? (
+        <h2 className="hero-text hero-undertitle">{t('hero.pronuntiation')}</h2>
+      ) : null}
+
       {/* <h3 className="hero-text hero-description">
     {t('hero.desc1')}{' '}
     <span className="underlined underlined--offset">

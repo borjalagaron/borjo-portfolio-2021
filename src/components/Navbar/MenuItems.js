@@ -18,5 +18,5 @@ export const MenuItems = [
     title: 'FrontEnd',
     url: '/frontend/',
     cName: 'nav-link',
-  }
+  },
 ];

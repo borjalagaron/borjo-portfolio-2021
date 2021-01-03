@@ -201,13 +201,14 @@
   }
 
   .hero-title {
-    font-size: 3rem;
+    font-size: 3rem; 
     padding-bottom: 0.5rem;
   }
 
   .hero-undertitle {
-    font-size: 0.4rem;
+    font-size: 0.9rem;
     padding-bottom: 2rem;
+    max-width: 90vw;
   }
 
   .hero-description {

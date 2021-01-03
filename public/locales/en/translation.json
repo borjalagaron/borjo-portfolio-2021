@@ -4,10 +4,26 @@
     "pronuntiation": "Though it may seem daunting it’s super easy! It’s pronounced /bohr-hah/",
     "desc1": "I am a",
     "productowner": "Product Owner",
-    "desc2": "and Agile Enthusiast based in Stuttgart. 7+ years in a Software Development Environment and also experienced as a Developer. Sometimes I also enjoy writing, singing and taking long walks through the forest.",
+    "desc2": "and Agile Enthusiast based in Stuttgart. \n7+ years in a Software Development Environment and also experienced as a Developer.\nSometimes I also enjoy writing, singing and taking long walks through the forest.",
     "iam": "I am"
   },
   "nav": {
     "aboutme": "About me"
+  },
+  "about": {
+    "values": "My values",
+    "value": {
+      "honesty": "Honesty",
+      "empathy": "Empathy",
+      "collaboration": "Collaboration",
+      "passion": "Passion",
+      "motivation": "Motivation",
+      "curiosity": "Curiosity",
+      "goodHumor": "Good Humor"
+    }
+  },
+  "quote": {
+    "bullshit": "\"The only thing standing between you and your goal is the bullshit story you keep telling yourself as to why you can’t achieve it\"",
+    "progress": "\"PAIN + REFLECTION = PROGRESS\""
   }
 }

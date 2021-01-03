@@ -4,10 +4,26 @@
     "pronuntiation": "Obwohl es entmutigend erscheint, ist es super einfach! \nEs ist / bohr-hah / ausgesprochen ",
     "desc1": "Ich bin ein",
     "productowner": "Product Owner",
-    "desc2": "und Agile Enthusiast mit Sitz in Stuttgart. \n7 Jahre in einer Softwareentwicklungsumgebung und auch als Entwickler erfahren. \nManchmal schreibe ich auch gerne, singe und mache lange Spaziergänge durch den Wald.",
+    "desc2": "und Agile Enthusiast mit Sitz in Stuttgart. \n7 Jahre in einer Softwareentwicklungsumgebung und auch als Entwickler erfahren.\nManchmal schreibe ich auch gerne, singe und mache lange Spaziergänge durch den Wald.",
     "iam": "ich bin"
   },
   "nav": {
     "aboutme": "Über mich"
+  },
+  "about": {
+    "values": "Meine Kernwerten",
+    "value": {
+      "collaboration": "Zusammenarbeit",
+      "empathy": "Empathie",
+      "honesty": "Ehrlichkeit",
+      "motivation": "Motivation",
+      "passion": "Leidenschaft",
+      "curiosity": "Neugierde",
+      "goodHumor": "Guter Humor"
+    }
+  },
+  "quote": {
+    "bullshit": "\"Die einzige Sache, die zwischen Dir und deinem Ziel steht, sind die Bullshit Ausreden, die du dir ständig selbst erzählt\"",
+    "progress": "\"SCHMERZ + REFLEXION = FORTSCHRITT\""
   }
 }

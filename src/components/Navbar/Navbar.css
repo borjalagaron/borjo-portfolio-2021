@@ -4,6 +4,7 @@
 
 .NavbarItems {
   background: transparent;
+  min-width: 100vw;
   height: 80px;
   display: flex;
   justify-content: space-between;
@@ -16,7 +17,6 @@
 .navbar-logo {
   color: #fff;
   justify-self: start;
-  margin-left: 20px;
   cursor: pointer;
 }
 

@@ -5,3 +5,100 @@
   padding: 0;
   font-family: 'Montserrat', sans-serif;
 }
+
+html {
+  /* this makes sure the padding and the border is included in the box sizing */
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.underlined {
+  flex: 1;
+  line-height: 1.2;
+  text-decoration: none;
+  background-image: linear-gradient(to right, yellow 0, yellow 100%);
+  background-position: 0 1.2em;
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background 0.5s;
+}
+
+.underlined:hover {
+  background-size: 100% 100%;
+}
+
+.underlined--offset {
+  background-position: 0 0.2em;
+  box-shadow: inset 0 -0.5em 0 0 transparent;
+}
+
+.underlined--thick {
+  background-position: 0 -0.1em;
+}
+
+.text-box {
+  width: 250px;
+  margin: 10px;
+  -webkit-box-shadow: 6px 6px 0px 0px #000000;
+  box-shadow: 6px 6px 0px 0px #000000;
+  border: 3px solid #000000;
+  transition: 250ms;
+}
+
+.text-box:hover {
+  -webkit-box-shadow: 6px 3px 0px 0px #000000;
+  box-shadow: 6px 3px 0px 0px #000000;
+}
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/* CUSTOM SCROLL BAR */
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+::-webkit-scrollbar-button {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-thumb {
+  background: #000000;
+  border: 0px none transparent;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #000000;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+  border: 0px none transparent;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-track:hover {
+  background: transparent;
+}
+::-webkit-scrollbar-track:active {
+  background: transparent;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
