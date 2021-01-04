@@ -12,12 +12,12 @@
 .lang-btn {
   width: 1.5rem;
   height: 1.5rem;
-  border: 0px;
-  outline: 0;
-  border-radius: 50%;
-  border-color: var(--borjoBlack);
-  border: 1px solid;
   margin-left: 10px;
+  border: 0px;
+  border: 1px solid;
+  border-color: var(--borjoBlack);
+  border-radius: 50%;
+  outline: 0;
   cursor: pointer;
   transition: transform 330ms;
 }
@@ -39,27 +39,27 @@
 }
 
 .selected-lang {
-  cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1rem;
   width: 120px;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 .selected-lang:before {
-  content: '';
   display: block;
   width: 32px;
   height: 32px;
+  content: '';
   background-image: url(../images/flags/germany.svg);
 }
 
 .lang-menu ul {
+  display: none;
   margin: 0;
   padding: 0;
   list-style-type: none;
-  display: none;
 }
 
 .lang-menu ul li {
@@ -69,10 +69,10 @@
 }
 
 .lang-menu ul li a:before {
-  content: '';
   display: inline-block;
   width: 32px;
   height: 32px;
+  content: '';
 }
 
 .lang-menu:hover ul{

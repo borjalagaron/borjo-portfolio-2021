@@ -1,8 +1,8 @@
 .Frontend {
   display: flex;
-  flex-wrap: wrap;
   top: 80px;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 100vw;
   place-items: center;
-  justify-content: center;
 }

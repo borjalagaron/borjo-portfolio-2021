@@ -17,9 +17,9 @@ html {
   line-height: 1.2;
   text-decoration: none;
   background-image: linear-gradient(to right, yellow 0, yellow 100%);
+  background-repeat: no-repeat;
   background-position: 0 1.2em;
   background-size: 0 100%;
-  background-repeat: no-repeat;
   transition: background 0.5s;
 }
 
@@ -39,15 +39,15 @@ html {
 .text-box {
   width: 250px;
   margin: 10px;
-  -webkit-box-shadow: 6px 6px 0px 0px #000000;
-  box-shadow: 6px 6px 0px 0px #000000;
   border: 3px solid #000000;
+  box-shadow: 6px 6px 0px 0px #000000;
   transition: 250ms;
+  -webkit-box-shadow: 6px 6px 0px 0px #000000;
 }
 
 .text-box:hover {
-  -webkit-box-shadow: 6px 3px 0px 0px #000000;
   box-shadow: 6px 3px 0px 0px #000000;
+  -webkit-box-shadow: 6px 3px 0px 0px #000000;
 }
 
 @-moz-keyframes spin {
@@ -78,9 +78,9 @@ html {
   height: 7px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #000000;
   border: 0px none transparent;
   border-radius: 0px;
+  background: #000000;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #000000;
@@ -89,9 +89,9 @@ html {
   background: #000000;
 }
 ::-webkit-scrollbar-track {
-  background: transparent;
   border: 0px none transparent;
   border-radius: 0px;
+  background: transparent;
 }
 ::-webkit-scrollbar-track:hover {
   background: transparent;

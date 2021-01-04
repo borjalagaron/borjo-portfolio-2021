@@ -1,32 +1,32 @@
 .text-box {
   width: auto;
   margin: 10px;
-  -webkit-box-shadow: 6px 6px 0px 0px #000000;
-  box-shadow: 6px 6px 0px 0px #000000;
   border: 3px solid #000000;
+  box-shadow: 6px 6px 0px 0px #000000;
   transition: 250ms;
+  -webkit-box-shadow: 6px 6px 0px 0px #000000;
 }
 
-.text-box-container{
+.text-box-container {
   width: auto;
 }
 
 .img {
-    width: 250px;
-    height: 250px;
-    z-index: -1;
-    background: center center no-repeat;
-    background-position: 50% 0;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
-  }
+  z-index: -1;
+  width: 250px;
+  height: 250px;
+  background: center center no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
 
 .text-box:hover {
-  -webkit-box-shadow: 6px 3px 0px 0px #000000;
   box-shadow: 6px 3px 0px 0px #000000;
+  -webkit-box-shadow: 6px 3px 0px 0px #000000;
 }
 
 .text-box-two-columns {
@@ -36,29 +36,30 @@
 }
 
 .text-box-title {
-  font-size: 1rem;
-  font-weight: bold;
   margin: 8px;
+  font-weight: bold;
+  font-size: 1rem;
   text-align: center;
+  text-decoration: underline;
 }
 
 .quote-text {
-  font-size: 1rem;
-  font-weight: bold;
   margin: 8px;
+  font-weight: bold;
+  font-size: 1rem;
 }
 
 .quote-author {
-  font-size: 1rem;
   margin: 8px;
+  font-size: 1rem;
   text-align: right;
 }
 
 .text-list {
-  font-size: 1rem;
-  columns: 2;
-  list-style: none;
   margin: 8px;
+  list-style: none;
+  columns: 2;
+  font-size: 1rem;
 }
 
 @-moz-keyframes spin {

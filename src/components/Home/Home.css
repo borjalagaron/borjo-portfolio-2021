@@ -2,13 +2,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  box-sizing: border-box;
   height: calc(100vh - 80px);
   padding: 1em;
-  box-sizing: border-box;
+  overflow: hidden;
   color: black;
   background: url('../../images/borjo-hero.webp') center center no-repeat;
   background-size: cover;
-  overflow: hidden;
 }
 
 .hero-text {
@@ -19,13 +19,13 @@
 }
 
 .hero-title {
-  font-size: 4rem;
   margin-bottom: 0.5rem;
+  font-size: 4rem;
 }
 
 .hero-undertitle {
-  font-size: 0.8rem;
   margin-bottom: 2rem;
+  font-size: 0.8rem;
 }
 
 .hero-description {
@@ -33,8 +33,8 @@
 }
 
 .hero-description:hover .underlined {
-  background-size: 100% 100%;
   background-position: 0 0.2em;
+  background-size: 100% 100%;
   box-shadow: inset 0 -0.5em 0 0 transparent;
 }
 
@@ -43,9 +43,9 @@
   line-height: 1.2;
   text-decoration: none;
   background-image: linear-gradient(to right, yellow 0, yellow 100%);
+  background-repeat: no-repeat;
   background-position: 0 1.2em;
   background-size: 0 100%;
-  background-repeat: no-repeat;
   transition: background 0.5s;
 }
 
@@ -63,28 +63,28 @@
 }
 
 .Iam {
-  font: normal 40px/50px Montserrat, sans-serif;
   color: #999;
+  font: normal 40px/50px Montserrat, sans-serif;
 }
 .Iam p {
-  height: 50px;
   float: left;
+  height: 50px;
   margin-right: 0.3em;
 }
 .Iam b {
-  float: left;
-  overflow: hidden;
   position: relative;
+  float: left;
   height: 50px;
+  overflow: hidden;
 }
 
 .Iam .innerIam {
   display: inline-block;
-  color: #e74c3c;
   position: relative;
-  white-space: nowrap;
   top: 0;
   left: 0;
+  color: #e74c3c;
+  white-space: nowrap;
 
   /*animation*/
   -webkit-animation: move 7s;
@@ -201,14 +201,14 @@
   }
 
   .hero-title {
-    font-size: 3rem; 
     padding-bottom: 0.5rem;
+    font-size: 3rem; 
   }
 
   .hero-undertitle {
-    font-size: 0.9rem;
-    padding-bottom: 2rem;
     max-width: 90vw;
+    padding-bottom: 2rem;
+    font-size: 0.9rem;
   }
 
   .hero-description {
