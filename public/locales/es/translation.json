@@ -2032,7 +2032,7 @@
     null,
     null,
     {
-      "bornInMadrid": "🇪🇸 Nací un domingo en Madrid, España"
+      "bornInMadrid-desc": "🇪🇸 Nací un domingo en Madrid, España"
     },
     null,
     null,
@@ -2058,7 +2058,7 @@
     null,
     null,
     {
-      "movedToGermany": "🇪🇸 ➡️ 🇩🇪 Me mudé a Stuttgart, Alemania"
+      "movedToGermany-desc": "🇪🇸 ➡️ 🇩🇪 Me mudé a Stuttgart, Alemania"
     },
     null,
     null,
@@ -2068,8 +2068,8 @@
     null,
     null,
     {
-      "bikepacking": "🚲 Monté mi bicicleta 1 mes por Francia, Bélgica, Holanda y Alemania",
-      "futureWife-desc": "👸 conocí a la futura madre de mis hijos"
+      "futureWife-desc": "👸 conocí a la futura madre de mis hijos",
+      "bikepacking-desc": "🚲 Monté mi bicicleta 1 mes por 🇫🇷 Francia, 🇧🇪 Bélgica, 🇳🇱 Holanda y 🇩🇪 Alemania"
     },
     {
       "portfolio-desc": "-ReactJS\n-Diseño Propio\n-Multilenguaje (i18n)",

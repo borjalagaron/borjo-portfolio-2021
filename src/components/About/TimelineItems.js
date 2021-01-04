@@ -2,7 +2,6 @@ export const TimelineItems = [
   {
     year: '2021',
     items: [
-      ,
       {
         timeMonth: '01',
         title: 'portfolio-title',
@@ -22,7 +21,7 @@ export const TimelineItems = [
       },
       {
         timeMonth: '08',
-        description: 'bikepacking',
+        description: 'bikepacking-desc',
         type: 'personal',
       },
       {
@@ -30,6 +29,17 @@ export const TimelineItems = [
         timeDay: '23',
         description: 'futureWife-desc',
         type: 'personal',
+      },
+    ],
+  },
+  {
+    year: '2013',
+    items: [
+      {
+        timeMonth: '05',
+        title: 'n5-title',
+        description: 'n5-desc',
+        type: 'professional',
       },
     ],
   },
@@ -44,7 +54,7 @@ export const TimelineItems = [
       },
       {
         timeMonth: '08',
-        description: 'movedToGermany',
+        description: 'movedToGermany-desc',
         type: 'personal',
       },
     ],
@@ -55,7 +65,7 @@ export const TimelineItems = [
       {
         timeDay: '31',
         timeMonth: '01',
-        description: 'bornInMadrid',
+        description: 'bornInMadrid-desc',
         type: 'personal',
       },
     ],

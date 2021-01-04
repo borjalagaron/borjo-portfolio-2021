@@ -2032,7 +2032,7 @@
     null,
     null,
     {
-      "bornInMadrid": "🇪🇸 I was born on a Sunday in Madrid, Spain"
+      "bornInMadrid-desc": "🇪🇸 I was born on a Sunday in Madrid, Spain"
     },
     null,
     null,
@@ -2058,9 +2058,13 @@
     null,
     null,
     {
-      "movedToGermany": "🇪🇸 ➡️ 🇩🇪 I moved to Stuttgart, Germany",
       "enicma-desc": "XML",
-      "enicma-title": "FrontEnd Developer @ Enicma (Munich)"
+      "enicma-title": "FrontEnd Developer @ Enicma (Munich)",
+      "movedToGermany-desc": "🇪🇸 ➡️ 🇩🇪 I moved to Stuttgart, Germany"
+    },
+    {
+      "n5-desc": "I did this in n5...",
+      "n5-title": "Full-Stack Developer @ n5 Solutions GmbH (Stuttgart)"
     },
     null,
     null,
@@ -2068,12 +2072,11 @@
     null,
     null,
     null,
-    null,
     {
-      "bikepacking": "🚲 I rode my bike 1 month trhough France, Belgium, Netherlands and Germany",
       "futureWife-desc": "👸 I met the future mother of my children",
-      "wirmachendruck-title": "Product Owner @ WirMachenDruck (Stuttgart)",
-      "wirmachendruck-desc": "2 Teams..."
+      "wirmachendruck-title": "Product Owner @ WirMachenDruck GmbH (Stuttgart)",
+      "wirmachendruck-desc": "2 Teams...",
+      "bikepacking-desc": "🚲 I rode my bike 1 month trhough 🇫🇷 France, 🇧🇪 Belgium, 🇳🇱 Netherlands and 🇩🇪 Germany"
     },
     {
       "portfolio-desc": "-ReactJS\n-Own Design\n-Multilanguage (i18n)",

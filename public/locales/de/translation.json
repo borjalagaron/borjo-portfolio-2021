@@ -34,7 +34,7 @@
       "04": "April",
       "01": "Januar",
       "03": "März",
-      "05": "Kann",
+      "05": "Mai",
       "06": "Juni",
       "07": "Juli",
       "08": "August",
@@ -2032,7 +2032,7 @@
     null,
     null,
     {
-      "bornInMadrid": "🇪🇸 Ich wurde an einem Sonntag in Madrid, Spanien geboren"
+      "bornInMadrid-desc": "🇪🇸 Ich wurde an einem Sonntag in Madrid, Spanien geboren"
     },
     null,
     null,
@@ -2058,7 +2058,7 @@
     null,
     null,
     {
-      "movedToGermany": "🇪🇸 ➡️ 🇩🇪 Ich bin nach Stuttgart gezogen"
+      "movedToGermany-desc": "🇪🇸 ➡️ 🇩🇪 Ich bin nach Stuttgart gezogen"
     },
     null,
     null,
@@ -2068,8 +2068,8 @@
     null,
     null,
     {
-      "bikepacking": "🚲 Ich bin 1 Monat mit meinem Fahrrad durch Frankreich, Belgien, die Niederlande und Deutschland gefahren",
-      "futureWife-desc": "👸 Ich habe die zukünftige Mutter meiner Kinder getroffen"
+      "futureWife-desc": "👸 Ich habe die zukünftige Mutter meiner Kinder kennengelernt",
+      "bikepacking-desc": "🚲 Ich bin 1 Monat mit meinem Fahrrad durch 🇫🇷 Frankreich, 🇧🇪 Belgien, 🇳🇱 die Niederlande und 🇩🇪 Deutschland gefahren"
     },
     {
       "portfolio-desc": "-ReactJS\n-Eigenes Design\n-Mehrsprachig (i18n)",

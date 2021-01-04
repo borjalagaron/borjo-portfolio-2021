@@ -14,18 +14,24 @@ const TimelineCard = (props) => {
       }
     >
       <header class="card__header">
-        <time class="time" datetime="2008-02-02">
+        <time
+          class="time"
+          // datetime="2008-02-02"
+        >
           {props.item.timeDay ? (
             <span class="time__day">{props.item.timeDay}</span>
           ) : null}
 
-          <span class="time__month">
-            {t('date.month.' + props.item.timeMonth)}{' '}
-          </span>
+          {props.item.timeMonth ? (
+            <span class="time__month">
+              {t('date.month.' + props.item.timeMonth)}{' '}
+            </span>
+          ) : null}
         </time>
         {props.item.title ? (
-            
-          <h3 class="card__title r-title">{t('timeline.' + props.year + '.' + props.item.title)}</h3>
+          <h3 class="card__title r-title">
+            {t('timeline.' + props.year + '.' + props.item.title)}
+          </h3>
         ) : null}
       </header>
       <div class="card__content ">
