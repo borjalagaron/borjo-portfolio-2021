@@ -12,7 +12,7 @@ const Timeline = (props) => {
       <button className="time" onClick={() => setProfessional(!professional)}>
         Professional
       </button>
-      <button className="time" onClick={() => setPersonal(!personal)}>Personal</button>
+      <button className="time" onClick={() => setPersonal(!personal)}>If you wanna make it personal</button>
 
       <div class="timeline">
         {props.timelineItems.map((timelineGroup, index) => {

@@ -13,34 +13,20 @@ export default function LanguageSelector() {
   return (
     <div className="LanguageSelector">
       <button
-        className="lang-btn de"
+        className={"lang-btn de " + (i18n.language === 'de' ? 'lang-active ' : '')}
         onClick={() => changeLanguage('de')}
         aria-label="Change to German"
       ></button>
       <button
-        className="lang-btn en"
+        className={"lang-btn en " + (i18n.language === 'en' ? 'lang-active ' : '')}
         onClick={() => changeLanguage('en')}
         aria-label="Change to English"
       ></button>
       <button
-        className="lang-btn es"
+        className={"lang-btn es " + (i18n.language === 'es' ? 'lang-active ' : '')}
         onClick={() => changeLanguage('es')}
         aria-label="Change to Spanish"
       ></button>
-      {/* <div className="lang-menu">
-        <div className="selected-lang">XDXDD</div>
-        <ul>
-          <li>
-            <a className="de">1</a>
-          </li>
-          <li>
-            <a className="es"></a>
-          </li>
-          <li>
-            <a className="en"></a>
-          </li>
-        </ul>
-      </div> */}
     </div>
   );
 }

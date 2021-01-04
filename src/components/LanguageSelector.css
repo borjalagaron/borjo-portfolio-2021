@@ -26,6 +26,10 @@
   transform: scale(1.2);
 }
 
+.lang-active {
+  transform: scale(1.2);
+}
+
 .es {
   background: url(../images/flags/spain.svg) no-repeat;
 }
