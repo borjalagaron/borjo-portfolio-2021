@@ -1,16 +1,22 @@
-import TextBox from 'components/TextBox';
-import React, { Component } from 'react';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { TimelineItems } from './TimelineItems';
 
 import './Timeline.css';
+import './TimelineCard.css';
 const TimelineCard = (props) => {
   const { t } = useTranslation();
+  console.log(props.personal);
   return (
     <div
       className={
         'timeline__card ' +
-        (props.item.type === 'professional' ? 'card' : 'card card-alt')
+        (props.item.type === 'professional' ? 'card ' : 'card card-alt ') +
+        (props.item.type === 'professional' && !props.professional
+          ? 'hidden-card '
+          : '') +
+        (props.item.type === 'personal' && !props.personal
+          ? 'hidden-card '
+          : '')
       }
     >
       <header class="card__header">

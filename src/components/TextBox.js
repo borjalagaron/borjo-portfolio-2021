@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './TextBox.css';
 
 const TextBox = (props) => {
@@ -25,8 +25,10 @@ const TextBox = (props) => {
             <ul className="text-list">
               {props.list.map((listItem, index) => {
                 return (
-                  <li >
-                    <span className="underlined underlined--offset">{listItem.name}</span>
+                  <li>
+                    <span className="underlined underlined--offset">
+                      {listItem.name}
+                    </span>
                   </li>
                 );
               })}

@@ -1,14 +1,19 @@
-import TextBox from 'components/TextBox';
-import React, { Component } from 'react';
-import { useTranslation } from 'react-i18next';
-
-import './Timeline.css';
+import React, { useState } from 'react';
 import TimelineCard from './TimelineCard';
+import './Timeline.css';
 
 const Timeline = (props) => {
-  const { t } = useTranslation();
+  // Declare a new state variable, which we'll call "count"
+  const [professional, setProfessional] = useState(true);
+  const [personal, setPersonal] = useState(false);
+
   return (
     <div class="page">
+      <button className="time" onClick={() => setProfessional(!professional)}>
+        Professional
+      </button>
+      <button className="time" onClick={() => setPersonal(!personal)}>Personal</button>
+
       <div class="timeline">
         {props.timelineItems.map((timelineGroup, index) => {
           return (
@@ -18,7 +23,14 @@ const Timeline = (props) => {
               </span>
               <div class="timeline__cards">
                 {timelineGroup.items.map((cardItem, index) => {
-                  return <TimelineCard item={cardItem} year={timelineGroup.year}/>;
+                  return (
+                    <TimelineCard
+                      professional={professional}
+                      personal={personal}
+                      item={cardItem}
+                      year={timelineGroup.year}
+                    />
+                  );
                 })}
               </div>
             </div>

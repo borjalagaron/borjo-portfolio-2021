@@ -60,6 +60,16 @@ export const TimelineItems = [
     ],
   },
   {
+    year: '2009',
+    items: [
+      {
+        timeMonth: '09',
+        description: 'alvaro-desc',
+        type: 'personal',
+      },
+    ],
+  },
+  {
     year: '1988',
     items: [
       {
