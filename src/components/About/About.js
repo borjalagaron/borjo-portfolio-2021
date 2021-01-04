@@ -1,8 +1,10 @@
 import TextBox from 'components/TextBox';
 import React, { Component } from 'react';
 import { useTranslation } from 'react-i18next';
+import TimelineItems from './TimelineItems';
 
 import './About.css';
+import Timeline from './Timeline';
 
 const About = () => {
   const { t } = useTranslation();
@@ -13,9 +15,10 @@ const About = () => {
     { name: t('about.value.motivation'), underlined: true },
     { name: t('about.value.passion'), underlined: true },
     { name: t('about.value.curiosity'), underlined: true },
-    { name: t('about.value.goodHumor'), underlined: true }
+    { name: t('about.value.goodHumor'), underlined: true },
   ];
 
+  console.log(TimelineItems);
   return (
     <div className="About">
       <div className="about-img"></div>
@@ -27,6 +30,7 @@ const About = () => {
           </span>{' '}
           {t('hero.desc2')}
         </div>
+        <Timeline timelineItems={TimelineItems} />
       </div>
 
       <div className="about-other">

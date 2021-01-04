@@ -1,0 +1,231 @@
+/*
+!!!!
+This pen is being refactored
+!!!!
+*/
+
+/*
+=====
+DEPENDENCES
+=====
+*/
+
+.r-title{
+    margin-top: var(--rTitleMarginTop, 0) !important;
+    margin-bottom: var(--rTitleMarginBottom, 0) !important;
+  }
+  
+  
+  p:not([class]){
+    margin-top: var(--cssTypographyBasicMargin, 1em);
+    margin-bottom: 0;
+    line-height: var(--cssTypographyLineHeight, 1.78);
+  }
+  
+  p:not([class]):first-child{
+    margin-top: 0;
+  }
+  
+  /*
+  text component
+  */
+  
+  .text{
+    display: var(--textDisplay, inline-flex);
+    font-size: var(--textFontSize, 1rem);  
+  }
+  
+  /*
+  time component
+  */
+  
+  /*
+  core styles
+  */
+  
+  .time{
+    display: var(--timeDisplay, inline-flex);
+  }
+  
+  /*
+  extensions
+  */
+  
+  .time__month{
+    margin-left: var(--timelineMounthMarginLeft, .25em);
+  }
+  
+  /*
+  skin
+  */
+  
+  .time{
+    padding: var(--timePadding, .25rem 1.25rem .25rem);
+    color: var(--timeColor, currentColor);
+    font-weight: var(--timeFontWeight, 700);
+    font-size: var(--timeFontSize, .75rem);
+    text-transform: var(--timeTextTransform, uppercase);
+    background-color: var(--timeBackgroundColor, #f0f0f0);
+  
+  }
+  
+  /*
+  card component
+  */
+  
+  /*
+  core styles
+  */
+  
+  .card{
+    padding: var(--timelineCardPadding, 1.5rem 1.5rem 1.25rem);
+  }
+  
+  .card__content{
+    margin-top: var(--cardContentMarginTop, .5rem);
+  }
+  
+  /*
+  skin
+  */
+  
+  .card{
+    border-left: var(--timelineCardBorderLeftWidth, 3px) solid var(--timelineCardBorderLeftColor, var(--uiTimelineMainColor));
+    border-radius: var(--timelineCardBorderRadius, 2px);
+    background-color: var(--timelineCardBackgroundColor, #fff);
+    box-shadow: var(--timelineCardBoxShadow, 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24));
+  }
+
+  .card-alt{
+    border-left: var(--timelineCardBorderLeftWidth, 3px) solid yellow;
+    border-radius: var(--timelineCardBorderRadius, 2px);
+    background-color: var(--timelineCardBackgroundColor, #fff);
+    box-shadow: var(--timelineCardBoxShadow, 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24));
+  }
+ 
+  /*
+  extensions
+  */
+  
+  .card__title{
+    --rTitleMarginTop: var(--cardTitleMarginTop, 1rem);
+    font-size: var(--cardTitleFontSize, 1.25rem);
+  }
+  
+  /*
+  =====
+  CORE STYLES
+  =====
+  */
+  
+  .timeline{
+    display: var(--timelineDisplay, grid);
+    grid-row-gap: var(--timelineGroupsGap, 2rem);
+  }
+  
+  /*
+  1. If timeline__year isn't displaed the gap between it and timeline__cards isn't displayed too
+  */
+  
+  .timeline__year{
+    margin-bottom: 1.25rem; /* 1 */
+  }
+  
+  .timeline__cards{
+    display: var(--timeloneCardsDisplay, grid);
+    grid-row-gap: var(--timeloneCardsGap, 1.5rem);
+  }
+  
+  
+  /*
+  =====
+  SKIN
+  =====
+  */
+  
+  .timeline{
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    border-left: var(--timelineLineWidth, 3px) solid var(--timelineLineBackgroundColor, var(--uiTimelineMainColor));
+    --uiTimelineMainColor: var(--timelineMainColor, #222);
+    --uiTimelineSecondaryColor: var(--timelineSecondaryColor, #fff);
+  
+  }
+  
+  .timeline__year{
+    --timePadding: var(--timelineYearPadding, .5rem 1.5rem);
+    --timeColor: var(--uiTimelineSecondaryColor);
+    --timeBackgroundColor: var(--uiTimelineMainColor);
+    --timeFontWeight: var(--timelineYearFontWeight, 400);
+  }
+  
+  .timeline__card{
+    position: relative;
+    margin-left: var(--timelineCardLineGap, 1rem);
+  }
+  
+  /*
+  1. Stoping cut box shadow
+  */
+  
+  .timeline__cards{
+    padding-top: .25rem; /* 1 */
+    padding-bottom: .25rem; /* 1 */
+    overflow: hidden;
+  }
+  
+  .timeline__card::before{
+    z-index: -1;
+    position: absolute;
+    top: var(--timelineCardLineTop, 1rem);
+    left: -50%;
+    width: 100%;
+    height: var(--timelineCardLineWidth, 2px);
+    content: "";
+    background-color: var(--timelineCardLineBackgroundColor, var(--uiTimelineMainColor));
+  
+  }
+  
+  /*
+  =====
+  SETTINGS
+  =====
+  */
+  /**/
+  .timeline{
+    --timelineMainColor: #231f20;
+  }
+  
+  /*
+  =====
+  DEMO
+  =====
+  */
+  
+  body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    color: #222;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans, Ubuntu, Fira Sans, Helvetica Neue, sans-serif;
+    background-color: #f0f0f0;
+  
+  }
+  
+  p{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+  
+  p:last-child{
+    margin-bottom: 0;
+  }
+  
+  .page{
+    max-width: 47rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5rem 2rem 3rem;
+  }
+  
