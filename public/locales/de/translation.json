@@ -3,9 +3,9 @@
     "hello": "Hola,",
     "pronuntiation": "Obwohl es entmutigend erscheint, ist es super einfach! \nEs ist / bohr-hah / ausgesprochen ",
     "desc1": "Ich bin ein",
-    "productowner": "Product Owner",
     "desc2": "und Agile Enthusiast mit Sitz in Stuttgart. \n7 Jahre in einer Softwareentwicklungsumgebung und auch als Entwickler erfahren.\nManchmal schreibe ich auch gerne, singe und mache lange Spaziergänge durch den Wald.",
-    "iam": "ich bin"
+    "iam": "ich bin",
+    "productOwner": "Product Owner"
   },
   "nav": {
     "aboutme": "Über mich"
@@ -31,15 +31,15 @@
       "10": "Oktober",
       "11": "November",
       "12": "Dezember",
-      "04": "April",
       "01": "Januar",
+      "02": "Februar",
       "03": "März",
+      "04": "April",
       "05": "Mai",
       "06": "Juni",
       "07": "Juli",
       "08": "August",
-      "09": "September",
-      "02": "Februar"
+      "09": "September"
     }
   },
   "timeline": [
@@ -2071,7 +2071,7 @@
     null,
     {
       "futureWife-desc": "👸 Ich habe die zukünftige Mutter meiner Kinder kennengelernt",
-      "bikepacking-desc": "🚲 Ich bin 1 Monat mit meinem Fahrrad durch 🇫🇷 Frankreich, 🇧🇪 Belgien, 🇳🇱 die Niederlande und 🇩🇪 Deutschland gefahren"
+      "bikepacking-desc": "🚲 Ich bin 1 Monat mit meinem Fahrrad durch 🇫🇷 Frankreich, 🇧🇪 Belgien, 🇳🇱 die Niederlande und 🇩🇪 Deutschland gefahren\nPene"
     },
     {
       "portfolio-desc": "-ReactJS\n-Eigenes Design\n-Mehrsprachig (i18n)",

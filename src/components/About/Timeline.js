@@ -9,10 +9,33 @@ const Timeline = (props) => {
 
   return (
     <div class="page">
-      <button className="time" onClick={() => setProfessional(!professional)}>
-        Professional
+      <button
+        className="time"
+        onClick={() => {
+          setProfessional(true);
+          setPersonal(false);
+        }}
+      >
+        Only Professional
       </button>
-      <button className="time" onClick={() => setPersonal(!personal)}>If you wanna make it personal</button>
+      <button
+        className="time"
+        onClick={() => {
+          setProfessional(false);
+          setPersonal(true);
+        }}
+      >
+        If you wanna make it personal
+      </button>
+      <button
+        className="time"
+        onClick={() => {
+          setProfessional(true);
+          setPersonal(true);
+        }}
+      >
+        Know Me Entirely
+      </button>
 
       <div class="timeline">
         {props.timelineItems.map((timelineGroup, index) => {

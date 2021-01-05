@@ -36,13 +36,6 @@ const Home = () => {
         <h2 className="hero-text hero-undertitle">{t('hero.pronuntiation')}</h2>
       ) : null}
 
-      {/* <h3 className="hero-text hero-description">
-    {t('hero.desc1')}{' '}
-    <span className="underlined underlined--offset">
-      {t('hero.productowner')}
-    </span>{' '}
-    {t('hero.desc2')}
-  </h3> */}
     </div>
   );
 };

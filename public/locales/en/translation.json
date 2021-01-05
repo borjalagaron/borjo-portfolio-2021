@@ -3,9 +3,9 @@
     "hello": "Hola,",
     "pronuntiation": "Though it may seem daunting it’s super easy! It’s pronounced /bohr-hah/",
     "desc1": "I am a",
-    "productowner": "Product Owner",
     "desc2": "and Agile Enthusiast based in Stuttgart. \n7+ years in a Software Development Environment and also experienced as a Developer.\nSometimes I also enjoy writing, singing and taking long walks through the forest.",
-    "iam": "I am"
+    "iam": "I am",
+    "productOwner": "Product Owner"
   },
   "nav": {
     "aboutme": "About me"
@@ -31,10 +31,10 @@
       "10": "October",
       "11": "november",
       "12": "December",
-      "02": "February",
-      "04": "April",
       "01": "January",
+      "02": "February",
       "03": "March",
+      "04": "April",
       "05": "May",
       "06": "June",
       "07": "July",

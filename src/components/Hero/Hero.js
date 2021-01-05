@@ -35,7 +35,7 @@ const Hero = (props) => {
       {/* <h3 className="hero-text hero-description">
         {t('hero.desc1')}{' '}
         <span className="underlined underlined--offset">
-          {t('hero.productowner')}
+          {t('hero.productOwner')}
         </span>{' '}
         {t('hero.desc2')}
       </h3> */}

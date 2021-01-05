@@ -2,10 +2,10 @@
   "hero": {
     "hello": "Hola,",
     "desc1": "Soy un",
-    "productowner": "Product Owner",
     "desc2": "y Agile Enthusiast con sede en Stuttgart.\n7 años en un entorno de desarrollo de software y también con experiencia como desarrollador.\nA veces también disfruto escribiendo, cantando y dando largos paseos por el bosque.",
     "iam": "soy",
-    "pronuntiation": "¡Aunque parezca abrumador, es muy fácil! \nSe pronuncia / bohr-hah /"
+    "pronuntiation": "¡Aunque parezca abrumador, es muy fácil! \nSe pronuncia / bohr-hah /",
+    "productOwner": "Product Owner"
   },
   "nav": {
     "aboutme": "Sobre mí"
@@ -31,15 +31,15 @@
       "10": "octubre",
       "11": "noviembre",
       "12": "diciembre",
-      "04": "abril",
       "01": "enero",
+      "02": "febrero",
       "03": "marzo",
+      "04": "abril",
       "05": "Mayo",
       "06": "junio",
       "07": "julio",
       "08": "agosto",
-      "09": "septiembre",
-      "02": "febrero"
+      "09": "septiembre"
     }
   },
   "timeline": [
@@ -2055,7 +2055,7 @@
     null,
     null,
     {
-      "alvaro-desc": "Conocí a mi hermano alvaro"
+      "alvaro-desc": "Conocí a mi hermano Álvaro"
     },
     null,
     null,
@@ -2070,8 +2070,8 @@
     null,
     null,
     {
-      "futureWife-desc": "👸 conocí a la futura madre de mis hijos",
-      "bikepacking-desc": "🚲 Monté mi bicicleta 1 mes por 🇫🇷 Francia, 🇧🇪 Bélgica, 🇳🇱 Holanda y 🇩🇪 Alemania"
+      "futureWife-desc": "👸 Conocí a la futura madre de mis hijos",
+      "bikepacking-desc": "🚲  Monté mi bicicleta 1 mes por 🇫🇷 Francia, 🇧🇪 Bélgica, 🇳🇱 Holanda y 🇩🇪 Alemania"
     },
     {
       "portfolio-desc": "-ReactJS\n-Diseño Propio\n-Multilenguaje (i18n)",
