@@ -35,7 +35,6 @@ const Home = () => {
       {i18n.language !== 'es' ? (
         <h2 className="hero-text hero-undertitle">{t('hero.pronuntiation')}</h2>
       ) : null}
-
     </div>
   );
 };

@@ -5,7 +5,6 @@ import './Timeline.css';
 import './TimelineCard.css';
 const TimelineCard = (props) => {
   const { t } = useTranslation();
-  console.log(props.personal);
   return (
     <div
       className={

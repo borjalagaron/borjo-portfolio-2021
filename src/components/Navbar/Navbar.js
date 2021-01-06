@@ -36,6 +36,7 @@ class Navbar extends Component {
                     <NavLink
                       className={item.cName}
                       to={item.url}
+                      // ARK better solution to this onClick?
                       onClick={this.handleClick}
                     >
                       <span className="nav-link-text">{item.title}</span>

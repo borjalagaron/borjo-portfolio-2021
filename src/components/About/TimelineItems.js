@@ -33,6 +33,29 @@ export const TimelineItems = [
     ],
   },
   {
+    year: '2019',
+    items: [
+      {
+        timeMonth: '08',
+        title: 'languageExchange-title',
+        description: 'languageExchange-desc',
+        type: 'professional',
+      },
+    ],
+  },
+  {
+    year: '2018',
+    items: [
+      {
+        timeDay: '11',
+        timeMonth: '11',
+        title: 'photoExhibition-title',
+        description: 'photoExhibition-desc',
+        type: 'professional',
+      },
+    ],
+  },
+  {
     year: '2013',
     items: [
       {

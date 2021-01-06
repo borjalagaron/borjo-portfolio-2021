@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import TimelineCard from './TimelineCard';
+
+import { useTranslation } from 'react-i18next';
 import './Timeline.css';
 
 const Timeline = (props) => {
-  // Declare a new state variable, which we'll call "count"
+  const { t } = useTranslation();
+
   const [professional, setProfessional] = useState(true);
   const [personal, setPersonal] = useState(false);
 
@@ -16,7 +19,7 @@ const Timeline = (props) => {
           setPersonal(false);
         }}
       >
-        Only Professional
+        {t('button.professional')}
       </button>
       <button
         className="time"
@@ -25,7 +28,7 @@ const Timeline = (props) => {
           setPersonal(true);
         }}
       >
-        If you wanna make it personal
+        {t('button.personal')}
       </button>
       <button
         className="time"
@@ -34,7 +37,7 @@ const Timeline = (props) => {
           setPersonal(true);
         }}
       >
-        Know Me Entirely
+        {t('button.knowMeCompletely')}
       </button>
 
       <div class="timeline">

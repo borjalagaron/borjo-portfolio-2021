@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+import ReactModal from 'react-modal';
 import './TextBox.css';
 
 const TextBox = (props) => {
+  const [showModal, setShowModal] = useState(false);
   return (
-    <div className="text-box-container">
+    //ARK Estructura esta ok? TypeScript?
+    //null or '' ?
+    <div className="text-box-container" onClick={props.onClick}>
       {props.title ? <div className="text-box-title">{props.title}</div> : null}
       <div className="text-box">
         {props.backgroundImage ? (
@@ -19,7 +24,9 @@ const TextBox = (props) => {
         {props.quote ? <div className="quote-text">{props.quote}</div> : null}
         {props.quoteAuthor ? (
           <div className="quote-author">{props.quoteAuthor}</div>
-        ) : null}
+        ) : (
+          ''
+        )}
         {props.list ? (
           <div className="quote-text ">
             <ul className="text-list">
@@ -49,12 +56,12 @@ const TextBox = (props) => {
   );
 };
 
-// {Photos.map((photo, index) => {
-//   return (
-//     <TextBox
-//       backgroundImage={'/garden/' + photo.url}
-//     />
-//   );
-// })}
+TextBox.propTypes = {
+  // Optional
+  title: PropTypes.string,
+  backgroundImage: PropTypes.string,
+  quote: PropTypes.string,
+  quoteAuthor: PropTypes.string,
+};
 
 export default TextBox;

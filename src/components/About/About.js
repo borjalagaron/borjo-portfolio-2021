@@ -16,9 +16,8 @@ const About = () => {
     { name: t('about.value.passion'), underlined: true },
     { name: t('about.value.curiosity'), underlined: true },
     { name: t('about.value.goodHumor'), underlined: true },
+    { name: t('about.value.creativity'), underlined: true },
   ];
-
-  console.log(TimelineItems);
   return (
     <div className="About">
       <div className="about-img"></div>
