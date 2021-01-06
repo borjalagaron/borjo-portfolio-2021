@@ -32,7 +32,7 @@ const TextBox = (props) => {
             <ul className="text-list">
               {props.list.map((listItem, index) => {
                 return (
-                  <li>
+                  <li key={index}>
                     <span className="underlined underlined--offset">
                       {listItem.name}
                     </span>

@@ -16,13 +16,13 @@ const Frontend = () => {
       {Photos.map((photo, index) => {
         return (
           <>
-            <TextBox
+            <TextBox key={index}
               onClick={() => {
                 setShowModal(index);
               }}
               backgroundImage={'/garden/' + photo.url}
             ></TextBox>
-
+            {/* ARK hacer imagen aparezca completa y centrada */}
             <ReactModal
               id={index}
               isOpen={showModal === index}
@@ -32,9 +32,11 @@ const Frontend = () => {
               contentLabel="Minimal Modal Example"
               ariaHideApp={false}
             >
-              <div style={{ display: 'flex', alignItems: 'center',height:'auto'}}>
+              <div>
                 <img
-                  style={{ height: '100%'}}
+                  style={{ maxWidth: '100%',
+                    maxHeight: '100%',
+                    display: 'block' }}
                   src={'/garden/' + photo.url}
                   alt="xxx"
                 />
