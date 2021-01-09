@@ -8,16 +8,15 @@
   overflow: hidden;
   color: black;
   background: url('images/borjo-hero.webp') center center no-repeat;
-
   background-size: cover;
 }
 
 .home-text {
   display: flex;
-  max-width: 60vw;
   flex-direction: column;
   justify-content: center;
   box-sizing: border-box;
+  max-width: 60vw;
   padding-left: 2rem;
 }
 
