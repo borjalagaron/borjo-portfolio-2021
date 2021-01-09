@@ -1,28 +1,27 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import Navbar from './components/Navbar/Navbar';
 import './App.css';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import About from './components/About/About';
-import Frontend from 'components/Frontend/Frontend';
-import UX from 'components/UX/UX';
-import Agile from 'components/Agile/Agile';
-import Home from 'components/Home/Home';
+import { Redirect, Route, Switch, useLocation } from 'react-router-dom';
+import Home from './Home'
+import paths from './paths';
 
-function App() {
+const App = () => {
+  const { pathname } = useLocation();
+
   return (
-    <BrowserRouter>
-      <div className="App">
-        <Navbar />
+    <div className="App">
+      <Navbar />
+      <Suspense fallback={<div>Loading...</div>}>
         <Switch>
+          <Redirect from="/:url*(/+)" to={pathname.slice(0, -1)} />
           <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/agile" component={Agile} />
-          <Route path="/ux" component={UX} />
-          <Route path="/frontend" component={Frontend} />
+          {paths.map(({ url, component }) => (
+            <Route path={url} component={component} />
+          ))}
         </Switch>
-      </div>
-    </BrowserRouter>
+      </Suspense>
+    </div>
   );
-}
+};
 
 export default App;

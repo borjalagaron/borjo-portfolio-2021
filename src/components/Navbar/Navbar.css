@@ -95,13 +95,6 @@
   display: none;
 }
 
-.nav-icons {
-  display: none;
-}
-.nav-icon {
-  display: none;
-}
-
 @media screen and (max-width: 960px) {
   .NavbarItems {
     background-color: var(--borjoBlack);
@@ -161,31 +154,7 @@
     mix-blend-mode: normal;
   }
 
-  .nav-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 
-  .nav-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2.5rem;
-    height: 2.5rem;
-    margin-right: 10px;
-    margin-left: 10px;
-    padding: 10px;
-    border-radius: 50%;
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-    background-color: grey;
-  }
-
-  .nav-icon:hover {
-    filter: brightness(125%);
-  }
 
   .menu-icon {
     display: flex;

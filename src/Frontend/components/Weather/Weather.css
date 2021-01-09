@@ -1,0 +1,93 @@
+:root {
+  --mutedMaroon: #a63737;
+  --mutedPink: #d1768f;
+  --mutedRed: red;
+  --mutedOrange: orange;
+  --mutedGold: gold;
+  --mutedYellow: yellow;
+  --mutedLightYellow: lightyellow;
+  --mutedGreen: green;
+  --mutedDarkGreen: darkgreen;
+  --mutedLavender: lavender;
+  --mutedLightBlue: lightblue;
+  --mutedNavyBlue: darkblue;
+  --mutedHeatherBlue: #b1b3b5;
+  --mutedGray: gray;
+  --mutedLightgray: lightgray;
+  --mutedWhite: white;
+}
+
+.weather-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 80px);
+  transition: all 2 ease-in-out;
+}
+
+.weather-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.location {
+  font-weight: bold;
+}
+
+.feels-like {
+  font-size: 8rem;
+}
+
+.--red {
+  background: var(--mutedMaroon);
+  background: linear-gradient(0deg, var(--mutedMaroon) 0%, white 100%);
+  transition: all 2 ease-in-out;
+  -webkit-transition: all 2 ease-in-out;
+}
+
+.--blue {
+  background: var(--mutedLavender);
+  background: linear-gradient(0deg, var(--mutedLavender) 0%, white 100%);
+  transition: all 2 ease-in-out;
+  -webkit-transition: all 2 ease-in-out;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.search-bar {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.search-bar:focus {
+  outline: 0;
+}
+
+@media screen and (max-width: 960px) {
+  .search-bar {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .--red {
+    background: var(--mutedMaroon);
+    background: linear-gradient(0deg, var(--mutedMaroon) 0%, #231f20 100%);
+    transition: all 2 ease-in-out;
+    -webkit-transition: all 2 ease-in-out;
+  }
+  .--blue {
+    background: blueviolet;
+    background: linear-gradient(0deg, var(--mutedLavender) 0%, #231f20 100%);
+    transition: all 2 ease-in-out;
+    -webkit-transition: all 2 ease-in-out;
+  }
+}

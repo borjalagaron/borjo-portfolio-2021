@@ -14,7 +14,7 @@ const Hero = (props) => {
         {t('hero.hello')}
         <br></br>
         {t('hero.iam')}{' '}
-        <span className="underlined underlined--offset">Borja</span>!
+        <span className="underlined underlined--offset">Borjaxxxxhero</span>!
       </h1>
       <div className="Iam hero-text">
         <b>

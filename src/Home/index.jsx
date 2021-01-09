@@ -1,8 +1,9 @@
 import React from 'react';
-import i18n from '../../i18n';
+import i18n from '../i18n';
 import { useTranslation } from 'react-i18next';
 
 import './Home.css';
+import SocialIcons from 'components/Navbar/SocialIcons';
 
 const Home = () => {
   const { t } = useTranslation();
@@ -35,6 +36,7 @@ const Home = () => {
       {i18n.language !== 'es' ? (
         <h2 className="hero-text hero-undertitle">{t('hero.pronuntiation')}</h2>
       ) : null}
+      <SocialIcons className="hero-text"/>
     </div>
   );
 };

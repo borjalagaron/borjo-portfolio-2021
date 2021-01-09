@@ -5,7 +5,8 @@ import borjoLogo from '../../images/borjo-logo.svg';
 import LanguageSelector from '../LanguageSelector.js';
 import { Link, NavLink } from 'react-router-dom';
 
-import Cv from '../../images/BorjaLagaron_Lebenslauf.pdf';
+
+import SocialIcons from './SocialIcons';
 
 class Navbar extends Component {
   state = { clicked: false };
@@ -16,75 +17,47 @@ class Navbar extends Component {
 
   render() {
     return (
-      <nav className="NavbarItems">
-        <Link to="/" className="navbar-logo logo">
-          <img
-            src={borjoLogo}
-            width="40"
-            height="40"
-            className="logo-image"
-            alt="Logo"
-          />
-        </Link>
-        <div className="nav-content">
-          <LanguageSelector />
-          <div className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
-            <ul className="nav-list">
-              {MenuItems.map((item, index) => {
-                return (
-                  <li key={index}>
-                    <NavLink
-                      className={item.cName}
-                      to={item.url}
-                      // ARK better solution to this onClick?
-                      onClick={this.handleClick}
-                    >
-                      <span className="nav-link-text">{item.title}</span>
-                    </NavLink>
-                  </li>
-                );
-              })}
-            </ul>
-            <div className="nav-icons">
-              <a
-                href="https://www.linkedin.com/in/borjalagaron/"
-                rel="noreferrer"
-                target="_blank"
-                className="nav-icon"
-              >
-                {' '}
-                <i className="fab fa-linkedin-in"></i>
-              </a>
-              <a
-                href={Cv}
-                rel="noreferrer"
-                target="_blank"
-                className="nav-icon"
-              >
-                {' '}
-                <i className="far fa-file"></i>
-              </a>
-              <a
-                href="mailto:Borja.lagaron@me.com?subject=Subject&body=Linea%201%0D%0ALinea%202"
-                rel="noreferrer"
-                target="_blank"
-                className="nav-icon"
-              >
-                {' '}
-                <i className="fas fa-envelope"></i>
-              </a>
+        <nav className="NavbarItems">
+          <Link to="/" className="navbar-logo logo">
+            <img
+              src={borjoLogo}
+              width="40"
+              height="40"
+              className="logo-image"
+              alt="Logo"
+            />
+          </Link>
+          <div className="nav-content">
+            <LanguageSelector />
+            <div className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
+              <ul className="nav-list">
+                {MenuItems.map((item, index) => {
+                  return (
+                    <li key={index}>
+                      <NavLink
+                        className={item.cName}
+                        to={item.url}
+                        // ARK better solution to this onClick?
+                        onClick={this.handleClick}
+                      >
+                        <span className="nav-link-text">{item.title}</span>
+                      </NavLink>
+                    </li>
+                  );
+                })}
+              </ul>
+              <SocialIcons isNavbar='true' />
+              </div>
+
+            <div className="menu-icon" onClick={this.handleClick}>
+              <i
+                className={
+                  this.state.clicked ? 'fas fa-times fa-fw' : 'fas fa-bars fa-fw'
+                }
+              ></i>
             </div>
           </div>
-
-          <div className="menu-icon" onClick={this.handleClick}>
-            <i
-              className={
-                this.state.clicked ? 'fas fa-times fa-fw' : 'fas fa-bars fa-fw'
-              }
-            ></i>
-          </div>
-        </div>
-      </nav>
+        </nav>
     );
   }
 }

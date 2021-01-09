@@ -3,65 +3,61 @@ import PropTypes from 'prop-types';
 import ReactModal from 'react-modal';
 import './TextBox.css';
 
-const TextBox = (props) => {
+const TextBox = ({title,
+  backgroundImage,
+  quote,
+  quoteAuthor, list, onClick}) => {
   const [showModal, setShowModal] = useState(false);
+
   return (
-    //ARK Estructura esta ok? TypeScript?
-    //null or '' ?
-    <div className="text-box-container" onClick={props.onClick}>
-      {props.title ? <div className="text-box-title">{props.title}</div> : null}
+    <div className="text-box-container" onClick={onClick}>
+      {!!title && <div className="text-box-title">{title}</div>}
       <div className="text-box">
-        {props.backgroundImage ? (
+        {backgroundImage ? (
           <div
             className="img"
             style={{
-              backgroundImage: `url(${props.backgroundImage})`,
+              backgroundImage: `url(${backgroundImage})`,
             }}
           >
             {' '}
           </div>
         ) : null}
-        {props.quote ? <div className="quote-text">{props.quote}</div> : null}
-        {props.quoteAuthor ? (
-          <div className="quote-author">{props.quoteAuthor}</div>
+        {quote ? <div className="quote-text">{quote}</div> : null}
+        {quoteAuthor ? (
+          <div className="quote-author">{quoteAuthor}</div>
         ) : (
           ''
         )}
-        {props.list ? (
+        {list && (
           <div className="quote-text ">
             <ul className="text-list">
-              {props.list.map((listItem, index) => {
+              {list.map(({name}, index) => {
                 return (
                   <li key={index}>
                     <span className="underlined underlined--offset">
-                      {listItem.name}
+                      {name}
                     </span>
                   </li>
                 );
               })}
             </ul>
             {/* <ul className="text-list">
-              {props.list.map((listItem, index) => {
+              {list.map(({name}, index) => {
                 return (
                   <li className="underlined underlined--offset">
-                    {listItem.name}
+                    {name}
                   </li>
                 );
               })}
             </ul> */}
           </div>
-        ) : null}
+        )}
       </div>
     </div>
   );
 };
 
-TextBox.propTypes = {
-  // Optional
-  title: PropTypes.string,
-  backgroundImage: PropTypes.string,
-  quote: PropTypes.string,
-  quoteAuthor: PropTypes.string,
-};
+
 
 export default TextBox;

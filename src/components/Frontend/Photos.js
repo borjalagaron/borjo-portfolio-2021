@@ -26,5 +26,4 @@ export const Photos = [
   {
     url: 'ORG_DSC03181.webp',
   },
-
 ];

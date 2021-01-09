@@ -1,26 +1,47 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
+import './Weather.css';
+
 const api = {
-  key: 'd1fe408c8c692a5e3997c8a079aeeb62',
+  key: 'e2792fb7a71ab46ef46a203c786b9921',
   base: 'https://api.openweathermap.org/data/2.5/',
 };
 
 const Weather = () => {
-  const [query, setQuery] = useState('');
+  const [query, setQuery] = useState('Stuttgart');
   const [weather, setWeather] = useState({});
+  const [initialSearch, setInitialSearch] = useState(false);
 
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const search = (evt) => {
     if (evt.key === 'Enter') {
-      fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
+      fetch(
+        `${api.base}weather?q=${query}&units=metric&lang=${i18n.language}&APPID=${api.key}`
+      )
+        .then((res) => res.json())
+        .then((result) => {
+          setWeather(result);
+          setQuery('');
+          console.log(`${api.base}weather?q=${query}&units=metric&lang=${i18n.language}&APPID=${api.key}`);
+        });
+
+    }
+  };
+
+  const firstSearch = () => {
+    if (initialSearch === false) {
+      fetch(
+        `${api.base}weather?q=${query}&units=metric&lang=${i18n.language}&APPID=${api.key}`
+      )
         .then((res) => res.json())
         .then((result) => {
           setWeather(result);
           setQuery('');
           console.log(result);
         });
+      setInitialSearch(true);
     }
   };
   const dateBuilder = (d) => {
@@ -55,13 +76,14 @@ const Weather = () => {
 
     return `${day} ${date} ${month} ${year}`;
   };
+  firstSearch();
   return (
     <div
       className={
         typeof weather.main != 'undefined'
           ? weather.main.temp > 16
-            ? 'app warm'
-            : 'app'
+            ? 'weather-container --red'
+            : 'weather-container --blue'
           : 'app'
       }
     >
@@ -77,7 +99,7 @@ const Weather = () => {
           />
         </div>
         {typeof weather.main != 'undefined' ? (
-          <div>
+          <div className="weather-data">
             <div className="location-box">
               <div className="location">
                 {weather.name}, {weather.sys.country}
@@ -85,16 +107,15 @@ const Weather = () => {
               <div className="date">{dateBuilder(new Date())}</div>
             </div>
             <div className="weather-box">
-              <div className="temp">
+              <div className="feels-like">
                 {Math.round(weather.main.feels_like)}°C
               </div>
-              <div className="weather">{weather.weather[0].main}</div>
+              {/* <div className="weather">{weather.weather[0].main}</div> */}
+
               <div className="weather-desc">
-                {weather.weather[0].description}
-              </div>
-              <div className="weather-desc">
-              {Math.round(weather.main.feels_like)>35 ? 'veery hot' : t('weather.' + weather.weather[0].id)}
-                
+                {Math.round(weather.main.feels_like) > 35
+                  ? 'veery hot'
+                  : t('weather.' + weather.weather[0].id)}
               </div>
               <div className="weather-icon">
                 <img
@@ -103,6 +124,7 @@ const Weather = () => {
                     weather.weather[0].icon +
                     '@4x.png'
                   }
+                  alt="weather-img"
                 />
               </div>
             </div>

@@ -1,10 +1,10 @@
 import TextBox from 'components/TextBox';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import TimelineItems from './TimelineItems';
+import TimelineItems from './Components/TimelineItems';
 
 import './About.css';
-import Timeline from './Timeline';
+import Timeline from './Components/Timeline';
 
 const About = () => {
   const { t } = useTranslation();

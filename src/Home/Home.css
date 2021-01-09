@@ -7,7 +7,8 @@
   padding: 1em;
   overflow: hidden;
   color: black;
-  background: url('../../images/borjo-hero.webp') center center no-repeat;
+  background: url('images/borjo-hero.webp') center center no-repeat;
+
   background-size: cover;
 }
 
@@ -202,7 +203,7 @@
 
   .hero-title {
     padding-bottom: 0.5rem;
-    font-size: 3rem; 
+    font-size: 3rem;
   }
 
   .hero-undertitle {
