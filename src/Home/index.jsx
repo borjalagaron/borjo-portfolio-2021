@@ -12,31 +12,36 @@ const Home = () => {
   return (
     <div className="Home">
       <div className="hero-img"></div>
-      <h1 className="hero-text hero-title">
-        {t('hero.hello')}
-        <br></br>
-        {t('hero.iam')}{' '}
-        <span className="underlined underlined--offset">Borja</span>!
-      </h1>
-      <div className="Iam hero-text">
-        <b>
-          <div className="innerIam">
-            Product Owner
-            <br />
-            Scrum Master
-            <br />
-            Developer
-            <br />
-            UX Designer
-            <br />
-            Minimalist
+      <div className="home-text">
+        <div className="text-container">
+          <h1 className="hero-title">
+            {t('hero.hello')}
+            <br></br>
+            {t('hero.iam')}{' '}
+            <span className="underlined underlined--offset">Borja</span>!
+          </h1>
+          <div className="Iam">
+            <b>
+              <div className="innerIam">
+                Product Owner
+                <br />
+                Scrum Master
+                <br />
+                Developer
+                <br />
+                UX Designer
+                <br />
+                Minimalist
+              </div>
+            </b>
           </div>
-        </b>
+          {i18n.language !== 'es' ? (
+            <h2 className="hero-undertitle">{t('hero.pronuntiation')}</h2>
+          ) : null}
+        </div>
+
+        <SocialIcons />
       </div>
-      {i18n.language !== 'es' ? (
-        <h2 className="hero-text hero-undertitle">{t('hero.pronuntiation')}</h2>
-      ) : null}
-      <SocialIcons className="hero-text"/>
     </div>
   );
 };
