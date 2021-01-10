@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import IBAN from 'iban';
-import { Route, Link } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import Breadcrumbs from '../../Breadcrumbs';
 import paths from '../../../paths';
 
 const IbanChecker = ({ match }) => {
   const [iban, setIban] = useState('');
-  const [isIbanValid, setIsIbanValid] = useState(false);
+  // const [isIbanValid, setIsIbanValid] = useState(false);
 
   let checkIban = (ibanInput) => {
     if (ibanInput.match(/\S/g).length < 34) {

@@ -1,14 +1,15 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
-import ReactModal from 'react-modal';
+import React from 'react';
+
 import './TextBox.css';
 
-const TextBox = ({title,
+const TextBox = ({
+  title,
   backgroundImage,
   quote,
-  quoteAuthor, list, onClick}) => {
-  const [showModal, setShowModal] = useState(false);
-
+  quoteAuthor,
+  list,
+  onClick,
+}) => {
   return (
     <div className="text-box-container" onClick={onClick}>
       {!!title && <div className="text-box-title">{title}</div>}
@@ -24,15 +25,11 @@ const TextBox = ({title,
           </div>
         ) : null}
         {quote ? <div className="quote-text">{quote}</div> : null}
-        {quoteAuthor ? (
-          <div className="quote-author">{quoteAuthor}</div>
-        ) : (
-          ''
-        )}
+        {quoteAuthor ? <div className="quote-author">{quoteAuthor}</div> : ''}
         {list && (
           <div className="quote-text ">
             <ul className="text-list">
-              {list.map(({name}, index) => {
+              {list.map(({ name }, index) => {
                 return (
                   <li key={index}>
                     <span className="underlined underlined--offset">
@@ -57,7 +54,5 @@ const TextBox = ({title,
     </div>
   );
 };
-
-
 
 export default TextBox;
