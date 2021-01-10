@@ -3,7 +3,7 @@ const SocialIcon = ({ isNavbar, href, name, fontAwesome }) => {
   return (
     <a
       href={href}
-      aria-label={name}
+      ariaLabel={name}
       rel="noreferrer"
       target="_blank"
       className={isNavbar ? 'social-icon__navbar' : 'social-icon'}
