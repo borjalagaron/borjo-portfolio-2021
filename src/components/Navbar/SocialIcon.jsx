@@ -1,9 +1,9 @@
-const SocialIcon = ({ isNavbar, href, name, fontAwesome }) => {
+const SocialIcon = ({ isNavbar, href, ariaLabel, fontAwesome }) => {
     console.log(isNavbar);
   return (
     <a
       href={href}
-      ariaLabel={name}
+      aria-label={ariaLabel}
       rel="noreferrer"
       target="_blank"
       className={isNavbar ? 'social-icon__navbar' : 'social-icon'}

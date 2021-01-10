@@ -6,17 +6,17 @@ import './SocialIcons.css';
 const SocialIcons = (props) => {
   const items = [
     {
-      name: 'LinkedIn',
+      ariaLabel: 'LinkedIn',
       href: 'https://www.linkedin.com/in/borjalagaron/',
       fontAwesome: 'fab fa-linkedin-in',
     },
     {
-      name: 'Resume',
+      ariaLabel: 'Resume',
       href: Cv,
       fontAwesome: 'far fa-file',
     },
     {
-      name: 'Mail',
+      ariaLabel: 'Mail',
       href:
         'mailto:test-email@me.com?subject=Subject&body=Linea%201%0D%0ALinea%202',
       fontAwesome: 'fas fa-envelope',
@@ -30,7 +30,7 @@ const SocialIcons = (props) => {
           <SocialIcon
             isNavbar={props.isNavbar}
             href={item.href}
-            ariaLabel={item.name}
+            ariaLabel={item.ariaLabel}
             fontAwesome={item.fontAwesome}
           ></SocialIcon>
         );
