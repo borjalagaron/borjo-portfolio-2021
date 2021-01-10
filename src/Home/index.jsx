@@ -40,7 +40,7 @@ const Home = () => {
           ) : null}
         </div>
 
-        <SocialIcons />
+        <SocialIcons isNavbar={false} />
       </div>
     </div>
   );

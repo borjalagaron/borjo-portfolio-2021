@@ -24,17 +24,25 @@ const paths = [
     title: 'FrontEnd',
     url: '/frontend',
     cName: 'nav-link',
-  },{
+  },
+  {
     component: lazy(() => import('./Frontend/components/Weather')),
     title: 'Weather',
     url: '/frontend/weather',
     cName: '',
-  },{
+  },
+  {
     component: lazy(() => import('./Frontend/components/Photos')),
     title: 'Photos',
     url: '/frontend/photos',
     cName: '',
-  }
+  },
+  {
+    component: lazy(() => import('./Frontend/components/IbanChecker')),
+    title: 'IbanChecker',
+    url: '/frontend/ibanChecker',
+    cName: '',
+  },
 ];
 
-export default paths
+export default paths;

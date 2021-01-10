@@ -2899,5 +2899,9 @@
     "vereinzelte Wolken: 25-50%",
     "zerbrochene Wolken: 51-84%",
     "bewölkte Wolken: 85-100%"
-  ]
+  ],
+  "projects": {
+    "gardenPhotoGallery-title": "Garten Projekt",
+    "weatherApp-title": "Wetter App"
+  }
 }

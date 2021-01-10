@@ -1,26 +1,49 @@
 import React, { lazy } from 'react';
 import { Route, Link } from 'react-router-dom';
+import ProjectCard from './components/ProjectCard';
+import Breadcrumbs from './Breadcrumbs';
+import paths from '../paths';
+
+// import weatherAppThumbnail from '%PUBLIC_URL%/images/thumbnails/WeatherApp';
+
+import { useTranslation } from 'react-i18next';
 
 import './Frontend.css';
 
 const Frontend = ({ match }) => {
+  const { t } = useTranslation();
   const subRoutes = [
-    { name: 'photos', component: lazy(() => import('./components/Photos')) },
-    { name: 'weather', component: lazy(() => import('./components/Weather')) },
-    { name: 'ibanChecker', component: lazy(() => import('./components/IbanChecker')) }, ]
+    {
+      name: 'photos',
+      component: lazy(() => import('./components/Photos')),
+      title: t('projects.gardenPhotoGallery-title'),
+      desc: t('projects.gardenPhotoGallery-desc'),
+      thumbnail: 'images/thumbnails/WeatherApp.webp',
+    },
+    {
+      name: 'weather',
+      component: lazy(() => import('./components/Weather')),
+      title: t('projects.weatherApp-title'),
+      desc: t('projects.weatherApp-desc'),
+      thumbnail: '/images/thumbnails/WeatherApp.webp',
+    },
+    {
+      name: 'ibanChecker',
+      component: lazy(() => import('./components/IbanChecker')),
+      title: t('projects.ibanChecker-title'),
+      desc: t('projects.ibanChecker-desc'),
+      thumbnail: 'images/thumbnails/WeatherApp.webp',
+    },
+  ];
 
-  console.log(match)
   return (
     <div className="Frontend">
-      { subRoutes.map(({name, component}) => (
-          <>
-            { match.isExact && <Link to={`${match.url}/${name}`}>
-              {name}
-            </Link> }
-            <Route path={`${match.path}/${name}`} component={component} />
-          </>
-        )
-      )}
+
+      {subRoutes.map((subRoute) => (
+        <>
+          <ProjectCard match={match} subRoute={subRoute} />
+        </>
+      ))}
     </div>
   );
 };

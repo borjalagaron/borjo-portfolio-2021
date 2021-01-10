@@ -2899,5 +2899,9 @@
     "nubes dispersas: 25-50%",
     "nubes rotas: 51-84%",
     "nubes: 85-100%"
-  ]
+  ],
+  "projects": {
+    "gardenPhotoGallery-title": "Garten Projekt",
+    "weatherApp-title": "Tiempo App"
+  }
 }

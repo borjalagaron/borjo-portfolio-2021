@@ -3,6 +3,7 @@ import TimelineCard from './TimelineCard';
 
 import { useTranslation } from 'react-i18next';
 import './Timeline.css';
+import TimelineButtonSelector from './TimelineButtonSelector';
 
 const Timeline = (props) => {
   const { t } = useTranslation();
@@ -12,34 +13,27 @@ const Timeline = (props) => {
 
   return (
     <div class="page">
-      <button
-        className="time"
-        onClick={() => {
-          setProfessional(true);
-          setPersonal(false);
-        }}
-      >
-        {t('button.professional')}
-      </button>
-      <button
-        className="time"
-        onClick={() => {
-          setProfessional(false);
-          setPersonal(true);
-        }}
-      >
-        {t('button.personal')}
-      </button>
-      <button
-        className="time"
-        onClick={() => {
-          setProfessional(true);
-          setPersonal(true);
-        }}
-      >
-        {t('button.knowMeCompletely')}
-      </button>
-
+      <TimelineButtonSelector
+        isProfessional={true}
+        isPersonal={false}
+        setProfessional={setProfessional}
+        setPersonal={setPersonal}
+        textButton={t('button.professional')}
+      />
+      <TimelineButtonSelector
+        isProfessional={false}
+        isPersonal={true}
+        setProfessional={setProfessional}
+        setPersonal={setPersonal}
+        textButton={t('button.professional')}
+      />
+      <TimelineButtonSelector
+        isProfessional={true}
+        isPersonal={true}
+        setProfessional={setProfessional}
+        setPersonal={setPersonal}
+        textButton={t('button.knowMeCompletely')}
+      />
       <div class="timeline">
         {props.timelineItems.map((timelineGroup, index) => {
           return (

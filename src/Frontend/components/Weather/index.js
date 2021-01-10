@@ -24,9 +24,10 @@ const Weather = () => {
         .then((result) => {
           setWeather(result);
           setQuery('');
-          console.log(`${api.base}weather?q=${query}&units=metric&lang=${i18n.language}&APPID=${api.key}`);
+          console.log(
+            `${api.base}weather?q=${query}&units=metric&lang=${i18n.language}&APPID=${api.key}`
+          );
         });
-
     }
   };
 
@@ -77,14 +78,26 @@ const Weather = () => {
     return `${day} ${date} ${month} ${year}`;
   };
   firstSearch();
+
+  // const feelsLike = 15;
+
+  // console.log(feelsLike);
+  // const containerClass =
+  //   feelsLike > 16
+  //     ? 'weather-container weather-container__red'
+  //     : feelsLike < 16
+  //     ? 'weather-container weather-container__blue'
+  //     : 'weather-container';
   return (
     <div
       className={
         typeof weather.main != 'undefined'
-          ? weather.main.temp > 16
-            ? 'weather-container --red'
-            : 'weather-container --blue'
-          : 'app'
+          ? weather.main.temp > 23
+            ? weather.main.temp > 28
+              ? 'weather-container weather-container__red'
+              : 'weather-container weather-container__yellow'
+            : 'weather-container weather-container__blue'
+          : 'weather-container'
       }
     >
       <main>
@@ -113,9 +126,7 @@ const Weather = () => {
               {/* <div className="weather">{weather.weather[0].main}</div> */}
 
               <div className="weather-desc">
-                {Math.round(weather.main.feels_like) > 35
-                  ? 'veery hot'
-                  : t('weather.' + weather.weather[0].id)}
+                {t('weather.' + weather.weather[0].id)}
               </div>
               <div className="weather-icon">
                 <img
