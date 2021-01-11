@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import borjoLogo from '../../images/borjo-logo.svg';
+import borjoLogo from '../images/borjo-logo.svg';
 import './UX.css';
 
 class UX extends Component {
