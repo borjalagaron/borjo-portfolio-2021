@@ -3,7 +3,7 @@ import i18n from '../i18n';
 import { useTranslation } from 'react-i18next';
 
 import './Home.css';
-import SocialIcons from 'components/Navbar/SocialIcons';
+import SocialIcons from 'shared/SocialIcons';
 
 const Home = () => {
   const { t } = useTranslation();

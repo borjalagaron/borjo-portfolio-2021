@@ -1,40 +1,59 @@
 import React, { useState } from 'react';
 import ReactModal from 'react-modal';
 import { Route } from 'react-router-dom';
-import Breadcrumbs from '../../Breadcrumbs';
-import paths from '../../../paths';
+import Breadcrumbs from 'shared/Breadcrumbs';
+import paths from 'paths';
+
+import DSC01510 from 'assets/images/garden/DSC01510.webp';
+import DSC02099 from 'assets/images/garden/DSC02099.webp';
+import DSC02201 from 'assets/images/garden/DSC02201.webp';
+import DSC02341 from 'assets/images/garden/DSC02341.webp';
+import DSC04026 from 'assets/images/garden/DSC04026.webp';
+import DSC04038 from 'assets/images/garden/DSC04038.webp';
+import DSC04102 from 'assets/images/garden/DSC04102.webp';
+import DSC04266 from 'assets/images/garden/DSC04266.webp';
+import ORG_DSC03181 from 'assets/images/garden/ORG_DSC03181.webp';
 
 import './styles.css';
 
-import TextBox from 'components/TextBox';
+import TextBox from 'shared/TextBox';
 
 const defaultPhotos = [
   {
     url: 'DSC01510.webp',
+    photo: DSC01510,
   },
   {
     url: 'DSC02099.webp',
+    photo: DSC02099,
   },
   {
     url: 'DSC02201.webp',
+    photo: DSC02201,
   },
   {
     url: 'DSC02341.webp',
+    photo: DSC02341,
   },
   {
     url: 'DSC04026.webp',
+    photo: DSC04026,
   },
   {
     url: 'DSC04038.webp',
+    photo: DSC04038,
   },
   {
     url: 'DSC04102.webp',
+    photo: DSC04102,
   },
   {
     url: 'DSC04266.webp',
+    photo: DSC04266,
   },
   {
     url: 'ORG_DSC03181.webp',
+    photo: ORG_DSC03181,
   },
 ];
 
@@ -84,7 +103,7 @@ const Photos = ({ photos }) => {
                 onClick={() => {
                   setShowModal(index);
                 }}
-                backgroundImage={'/garden/' + photo.url}
+                backgroundImage={photo.photo}
               ></TextBox>
               <ReactModal
                 id={index}
@@ -102,7 +121,7 @@ const Photos = ({ photos }) => {
                     maxHeight: '85vh',
                     display: 'block',
                   }}
-                  src={'/garden/' + photo.url}
+                  src={photo.photo}
                   alt="xxx"
                 />
               </ReactModal>

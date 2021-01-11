@@ -1,4 +1,4 @@
-import TextBox from 'components/TextBox';
+import TextBox from 'shared/TextBox';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import TimelineItems from './Components/TimelineItems';

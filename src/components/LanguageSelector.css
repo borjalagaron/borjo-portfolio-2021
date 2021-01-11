@@ -31,15 +31,15 @@
 }
 
 .es {
-  background: url(../images/flags/spain.svg) no-repeat;
+  background: url(assets/images/flags/spain.svg) no-repeat;
 }
 
 .de {
-  background-image: url(../images/flags/germany.svg);
+  background-image: url(assets/images/flags/germany.svg);
 }
 
 .en {
-  background-image: url(../images/flags/united-kingdom.svg);
+  background-image: url(assets/images/flags/united-kingdom.svg);
 }
 
 .selected-lang {
@@ -51,13 +51,13 @@
   cursor: pointer;
 }
 
-.selected-lang:before {
+/* .selected-lang:before {
   display: block;
   width: 32px;
   height: 32px;
   content: '';
   background-image: url(../images/flags/germany.svg);
-}
+} */
 
 .lang-menu ul {
   display: none;

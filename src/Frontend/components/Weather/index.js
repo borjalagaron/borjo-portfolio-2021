@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Route } from 'react-router-dom';
-import Breadcrumbs from '../../Breadcrumbs';
+import Breadcrumbs from '../../../shared/Breadcrumbs';
 import paths from '../../../paths';
 
 import './Weather.css';

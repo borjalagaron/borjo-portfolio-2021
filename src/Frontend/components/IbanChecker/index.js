@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import IBAN from 'iban';
 import { Route } from 'react-router-dom';
-import Breadcrumbs from '../../Breadcrumbs';
-import paths from '../../../paths';
+import Breadcrumbs from 'shared/Breadcrumbs';
+import paths from 'paths';
 
 import './styles.css';
 

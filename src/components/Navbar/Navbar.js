@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { MenuItems } from './MenuItems';
 import './Navbar.css';
-import borjoLogo from '../../images/borjo-logo.svg';
+import borjoLogo from 'assets/images/logo/borjo-logo.svg';
 import LanguageSelector from '../LanguageSelector.js';
 import { Link, NavLink } from 'react-router-dom';
 
 
-import SocialIcons from './SocialIcons';
+import SocialIcons from 'shared/SocialIcons';
 
 class Navbar extends Component {
   state = { clicked: false };

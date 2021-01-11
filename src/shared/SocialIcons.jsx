@@ -1,4 +1,4 @@
-import Cv from '../../images/BorjaLagaron_Lebenslauf.pdf';
+import Cv from 'assets/resume/BorjaLagaron_Lebenslauf.pdf';
 import SocialIcon from './SocialIcon';
 
 import './SocialIcons.css';

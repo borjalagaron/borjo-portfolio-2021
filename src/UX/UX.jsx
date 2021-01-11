@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import borjoLogo from '../images/borjo-logo.svg';
+import borjoLogo from 'assets/images/logo/borjo-logo.svg';
 import './UX.css';
 
 class UX extends Component {
@@ -86,9 +86,9 @@ class UX extends Component {
               </div>
               <div class="blog-body">
                 <div class="blog-title">
-                  <h1>
+                  {/* <h1>
                     <a href="#">I Like To Make Cool Things</a>
-                  </h1>
+                  </h1> */}
                 </div>
                 <div class="blog-summary">
                   <p>
@@ -104,7 +104,7 @@ class UX extends Component {
                 </div>
                 <div class="blog-tags">
                   <ul>
-                    <li>
+                    {/* <li>
                       <a href="#">css</a>
                     </li>
                     <li>
@@ -115,7 +115,7 @@ class UX extends Component {
                     </li>
                     <li>
                       <a href="https://twitter.com/russbeye">twitter</a>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>

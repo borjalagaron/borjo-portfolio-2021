@@ -2,10 +2,10 @@
   "hero": {
     "hello": "Hola,",
     "pronuntiation": "Though it may seem daunting it’s super easy! It’s pronounced /bohr-hah/",
-    "desc1": "I am a",
     "desc2": "and Agile Enthusiast based in Stuttgart. \n7+ years in a Software Development Environment and also experienced as a Developer.\nSometimes I also enjoy writing, singing and taking long walks through the forest.",
     "iam": "I am",
-    "productOwner": "Product Owner"
+    "productOwner": "Product Owner",
+    "desc1": "I am a"
   },
   "nav": {
     "aboutme": "About me"
@@ -21396,5 +21396,6 @@
   "projects": {
     "gardenPhotoGallery-title": "Garten Projekt",
     "weatherApp-title": "Weather App"
-  }
+  },
+  "home": {}
 }

@@ -1,11 +1,11 @@
 {
   "hero": {
     "hello": "Hola,",
-    "desc1": "Soy un",
     "desc2": "y Agile Enthusiast con sede en Stuttgart.\n7 años en un entorno de desarrollo de software y también con experiencia como desarrollador.\nA veces también disfruto escribiendo, cantando y dando largos paseos por el bosque.",
     "iam": "soy",
     "pronuntiation": "Tambien me puedes llamar Borjo :)",
-    "productOwner": "Product Owner"
+    "productOwner": "Product Owner",
+    "desc1": "Soy un"
   },
   "nav": {
     "aboutme": "Sobre mí"
@@ -2905,5 +2905,6 @@
   "projects": {
     "gardenPhotoGallery-title": "Garten Projekt",
     "weatherApp-title": "Tiempo App"
-  }
+  },
+  "home": {}
 }
