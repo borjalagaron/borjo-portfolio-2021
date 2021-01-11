@@ -21,6 +21,12 @@ const SocialIcons = (props) => {
         'mailto:test-email@me.com?subject=Subject&body=Linea%201%0D%0ALinea%202',
       fontAwesome: 'fas fa-envelope',
     },
+    {
+      ariaLabel: 'Github',
+      href:
+        'https://github.com/borjalagaron/borjo-portfolio-2021',
+      fontAwesome: 'fab fa-github',
+    },
   ];
 
   return (

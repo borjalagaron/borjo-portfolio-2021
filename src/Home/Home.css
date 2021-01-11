@@ -16,7 +16,6 @@
   flex-direction: column;
   justify-content: center;
   box-sizing: border-box;
-  max-width: 60vw;
   padding-left: 2rem;
 }
 
@@ -32,6 +31,7 @@
   flex-direction: column;
   justify-content: center;
   box-sizing: border-box;
+  max-width: 60vw;
   margin-bottom: 2rem;
 }
 
