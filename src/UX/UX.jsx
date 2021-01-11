@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import borjoLogo from 'assets/images/logo/borjo-logo.svg';
 import './UX.css';
+import Loading from 'shared/Loading';
 
 class UX extends Component {
   constructor(props) {
@@ -23,13 +23,14 @@ class UX extends Component {
       <div>
         {!this.state.done ? (
           <div className="UX">
-            <img
+            {/* <img
               src={borjoLogo}
               width="40"
               height="40"
               className="loading-logo"
               alt="Logo"
-            />
+            /> */}
+            <Loading />
           </div>
         ) : (
           <div className="UX">
@@ -76,7 +77,8 @@ class UX extends Component {
                   </ul>
                 </div>
               </div>
-            </div><div className="text-box">
+            </div>
+            <div className="text-box">
               <div class="blog-header">
                 <div class="blog-cover">
                   <div class="blog-author">
