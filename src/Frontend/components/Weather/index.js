@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Route } from 'react-router-dom';
+import Breadcrumbs from '../../Breadcrumbs';
+import paths from '../../../paths';
 
 import './Weather.css';
 
@@ -89,62 +92,84 @@ const Weather = () => {
   //     ? 'weather-container weather-container__blue'
   //     : 'weather-container';
   return (
-    <div
-      className={
-        typeof weather.main != 'undefined'
-          ? weather.main.temp > 23
-            ? weather.main.temp > 28
-              ? 'weather-container weather-container__red'
-              : 'weather-container weather-container__yellow'
-            : 'weather-container weather-container__blue'
-          : 'weather-container'
-      }
-    >
-      <main>
-        <div className="search-box">
-          <input
-            type="text"
-            className="search-bar"
-            placeholder="Search..."
-            onChange={(e) => setQuery(e.target.value)}
-            value={query}
-            onKeyPress={search}
-          />
-        </div>
-        {typeof weather.main != 'undefined' ? (
-          <div className="weather-data">
-            <div className="location-box">
-              <div className="location">
-                {weather.name}, {weather.sys.country}
-              </div>
-              <div className="date">{dateBuilder(new Date())}</div>
-            </div>
-            <div className="weather-box">
-              <div className="feels-like">
-                {Math.round(weather.main.feels_like)}°C
-              </div>
-              {/* <div className="weather">{weather.weather[0].main}</div> */}
+    <>
 
-              <div className="weather-desc">
-                {t('weather.' + weather.weather[0].id)}
+      <div
+        className={
+          typeof weather.main != 'undefined'
+            ? weather.main.temp > 23
+              ? weather.main.temp > 28
+                ? 'main-container weather-container__red'
+                : 'main-container weather-container__yellow'
+              : 'main-container weather-container__blue'
+            : 'main-container'
+        }
+      >
+        {paths.map(({ Component, title, url, cName }, key) => (
+          <>
+            <Route
+              exact
+              path={url}
+              key={key}
+              render={(props) => {
+                const crumbs = paths
+                  // Get all routes that contain the current one.
+                  .filter(({ url }) => props.match.path.includes(url));
+
+                console.log(`Generated crumbs for ${props.match.path}`);
+                console.log(crumbs);
+                crumbs.map(({ title, url }) => console.log({ title, url }));
+                return <Breadcrumbs crumbs={crumbs} />;
+              }}
+            />
+          </>
+        ))}
+        <main className="weather-container">
+          <div className="search-box">
+            <input
+              type="text"
+              className="search-bar"
+              placeholder="Search..."
+              onChange={(e) => setQuery(e.target.value)}
+              value={query}
+              onKeyPress={search}
+            />
+          </div>
+          {typeof weather.main != 'undefined' ? (
+            <div className="weather-data">
+              <div className="location-box">
+                <div className="location">
+                  {weather.name}, {weather.sys.country}
+                </div>
+                <div className="date">{dateBuilder(new Date())}</div>
               </div>
-              <div className="weather-icon">
-                <img
-                  src={
-                    'http://openweathermap.org/img/wn/' +
-                    weather.weather[0].icon +
-                    '@4x.png'
-                  }
-                  alt="weather-img"
-                />
+              <div className="weather-box">
+                <div className="feels-like">
+                  {Math.round(weather.main.feels_like)}°C
+                </div>
+                {/* <div className="weather">{weather.weather[0].main}</div> */}
+
+                <div className="weather-desc">
+                  {t('weather.' + weather.weather[0].id)}
+                </div>
+                <div className="weather-icon">
+                  <img
+                    src={
+                      'http://openweathermap.org/img/wn/' +
+                      weather.weather[0].icon +
+                      '@4x.png'
+                    }
+                    alt="weather-img"
+                  />
+                </div>
               </div>
             </div>
-          </div>
-        ) : (
-          ''
-        )}
-      </main>
-    </div>
+          ) : (
+            ''
+          )}
+        </main>
+      </div>
+    </>
   );
 };
 

@@ -13,27 +13,32 @@ const Timeline = (props) => {
 
   return (
     <div class="page">
-      <TimelineButtonSelector
-        isProfessional={true}
-        isPersonal={false}
-        setProfessional={setProfessional}
-        setPersonal={setPersonal}
-        textButton={t('button.professional')}
-      />
-      <TimelineButtonSelector
-        isProfessional={false}
-        isPersonal={true}
-        setProfessional={setProfessional}
-        setPersonal={setPersonal}
-        textButton={t('button.professional')}
-      />
-      <TimelineButtonSelector
-        isProfessional={true}
-        isPersonal={true}
-        setProfessional={setProfessional}
-        setPersonal={setPersonal}
-        textButton={t('button.knowMeCompletely')}
-      />
+      <div className="timeline-selector">
+        <TimelineButtonSelector
+          className={professional && !personal ? "btn-timeline__active" : "btn-timeline"}
+          isProfessional={true}
+          isPersonal={false}
+          setProfessional={setProfessional}
+          setPersonal={setPersonal}
+          textButton={t('button.professional')}
+        />
+        <TimelineButtonSelector
+          className={!professional && personal ? "btn-timeline__active" : "btn-timeline"}
+          isProfessional={false}
+          isPersonal={true}
+          setProfessional={setProfessional}
+          setPersonal={setPersonal}
+          textButton={t('button.personal')}
+        />
+        <TimelineButtonSelector
+          className={professional && personal ? "btn-timeline__active" : "btn-timeline"}
+          isProfessional={true}
+          isPersonal={true}
+          setProfessional={setProfessional}
+          setPersonal={setPersonal}
+          textButton={t('button.knowMeCompletely')}
+        />
+      </div>
       <div class="timeline">
         {props.timelineItems.map((timelineGroup, index) => {
           return (

@@ -33,13 +33,13 @@ const paths = [
   },
   {
     component: lazy(() => import('./Frontend/components/Photos')),
-    title: 'Photos',
+    title: 'Garten Projekt',
     url: '/frontend/photos',
     cName: '',
   },
   {
     component: lazy(() => import('./Frontend/components/IbanChecker')),
-    title: 'IbanChecker',
+    title: 'Iban Checker',
     url: '/frontend/ibanChecker',
     cName: '',
   },

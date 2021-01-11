@@ -1,0 +1,11 @@
+.main-container {
+  width: 100vw;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 2 ease-in-out;
+}

@@ -218,3 +218,9 @@ DEPENDENCES
     margin-left: auto;
     padding: 5rem 2rem 3rem;
   }
+
+  /* @media screen and (max-width: 960px) {
+.card__header{
+  font-size:
+}
+  } */

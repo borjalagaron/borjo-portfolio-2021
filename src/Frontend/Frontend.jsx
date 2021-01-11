@@ -1,6 +1,8 @@
 import React, { lazy } from 'react';
-
+import { Route, Link } from 'react-router-dom';
 import ProjectCard from './components/ProjectCard';
+import Breadcrumbs from './Breadcrumbs';
+import paths from '../paths';
 
 // import weatherAppThumbnail from '%PUBLIC_URL%/images/thumbnails/WeatherApp';
 
@@ -36,13 +38,12 @@ const Frontend = ({ match }) => {
 
   return (
     <div className="Frontend">
-
-      {subRoutes.map((subRoute) => (
-        <>
-          <ProjectCard match={match} subRoute={subRoute} />
-        </>
-      ))}
-    </div>
+        {subRoutes.map((subRoute) => (
+          <>
+            <ProjectCard match={match} subRoute={subRoute} />
+          </>
+        ))}
+      </div>
   );
 };
 

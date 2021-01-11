@@ -1,3 +1,32 @@
-.hidden-card{
-    display: none;
+.hidden-card {
+  display: none;
+}
+
+.btn-timeline {
+  background-color: white;
+  padding: 10px;
+  margin: 15px;
+  flex: 1 1 0px;
+}
+
+.btn-timeline__active {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin: 15px;
+  flex: 1 1 0px;
+}
+
+.timeline-selector {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 960px) {
+  .timeline-selector {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
 }

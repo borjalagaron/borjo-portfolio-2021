@@ -1,5 +1,5 @@
-
 const TimelineButtonSelector = ({
+  className,
   isProfessional,
   isPersonal,
   setProfessional,
@@ -8,7 +8,7 @@ const TimelineButtonSelector = ({
 }) => {
   return (
     <button
-      className="time"
+      className={className}
       onClick={() => {
         setProfessional(isProfessional);
         setPersonal(isPersonal);
