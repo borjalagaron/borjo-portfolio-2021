@@ -31,7 +31,7 @@ const IbanChecker = ({ match }) => {
       window.localStorage.setItem('name', name);
       window.localStorage.setItem('lastName', lastName);
     }
-  }, [count, iban]);
+  }, [count, iban, name, lastName]);
 
   // const [isIbanValid, setIsIbanValid] = useState(false);
 
