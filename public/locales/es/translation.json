@@ -2906,5 +2906,12 @@
     "gardenPhotoGallery-title": "Garten Projekt",
     "weatherApp-title": "Tiempo App"
   },
-  "home": {}
+  "home": {},
+  "form": {
+    "placeholder": {
+      "name": "Nombre",
+      "lastName": "Apellido",
+      "description": "Descripción"
+    }
+  }
 }
