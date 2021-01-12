@@ -1,14 +1,10 @@
 import React from 'react';
-import i18n from '../i18n';
-import { useTranslation } from 'react-i18next';
+import { withTranslation } from 'react-i18next';
 
 import './Home.css';
 import SocialIcons from 'shared/SocialIcons';
 
-const Home = () => {
-  const { t } = useTranslation();
-  // or const [t, i18n] = useTranslation();
-
+const Home = ({ t, i18n }) => {
   return (
     <div className="Home">
       <div className="hero-img"></div>
@@ -46,4 +42,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default withTranslation()(Home);
