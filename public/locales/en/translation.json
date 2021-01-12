@@ -21397,5 +21397,11 @@
     "gardenPhotoGallery-title": "Garten Projekt",
     "weatherApp-title": "Weather App"
   },
-  "home": {}
+  "home": {},
+  "form": {
+    "placeholder": {
+      "name": "write your name",
+      "iban": "write your IBAN"
+    }
+  }
 }

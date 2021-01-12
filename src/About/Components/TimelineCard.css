@@ -4,6 +4,7 @@
 
 .btn-timeline {
   background-color: white;
+  color: black;
   padding: 10px;
   margin: 15px;
   flex: 1 1 0px;
@@ -13,10 +14,10 @@
 .btn-timeline__active {
   background-color: black;
   color: white;
-  padding: 10px;
-  margin: 15px;
-  flex: 1 1 0px;
-  font-weight: bold;
+}
+
+.btn-timeline:focus {
+  outline: 0;
 }
 
 .timeline-selector {

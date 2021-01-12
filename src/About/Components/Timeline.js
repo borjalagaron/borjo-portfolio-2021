@@ -15,7 +15,7 @@ const Timeline = (props) => {
     <div class="page">
       <div className="timeline-selector">
         <TimelineButtonSelector
-          className={professional && !personal ? "btn-timeline__active" : "btn-timeline"}
+          className={professional && !personal ? "btn-timeline btn-timeline__active" : "btn-timeline"}
           isProfessional={true}
           isPersonal={false}
           setProfessional={setProfessional}
@@ -23,7 +23,7 @@ const Timeline = (props) => {
           textButton={t('button.professional')}
         />
         <TimelineButtonSelector
-          className={!professional && personal ? "btn-timeline__active" : "btn-timeline"}
+          className={!professional && personal ? "btn-timeline btn-timeline__active" : "btn-timeline"}
           isProfessional={false}
           isPersonal={true}
           setProfessional={setProfessional}
@@ -31,7 +31,7 @@ const Timeline = (props) => {
           textButton={t('button.personal')}
         />
         <TimelineButtonSelector
-          className={professional && personal ? "btn-timeline__active" : "btn-timeline"}
+          className={professional && personal ? "btn-timeline btn-timeline__active" : "btn-timeline"}
           isProfessional={true}
           isPersonal={true}
           setProfessional={setProfessional}

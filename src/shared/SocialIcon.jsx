@@ -1,5 +1,4 @@
 const SocialIcon = ({ isNavbar, href, ariaLabel, fontAwesome }) => {
-    console.log(isNavbar);
   return (
     <a
       href={href}
