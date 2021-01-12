@@ -13,7 +13,7 @@ const IbanChecker = ({ match }) => {
   const initialIsFormValid = () =>
     Boolean(window.localStorage.getItem(false) || false);
 
-  const initialCount = () => Number(window.localStorage.getItem('count') || 0);
+  // const initialCount = () => Number(window.localStorage.getItem('count') || 0);
   const initialIban = () => String(window.localStorage.getItem('iban') || '');
   const initialName = () => String(window.localStorage.getItem('name') || '');
   const initialDescription = () =>
@@ -21,27 +21,27 @@ const IbanChecker = ({ match }) => {
   const initialLastName = () =>
     String(window.localStorage.getItem('lastName') || '');
 
-  const [count, setCount] = useState(initialCount);
+  // const [count, setCount] = useState(initialCount);
   const [isFormValid, setFormValid] = useState(initialIsFormValid);
   const [iban, setIban] = useState(initialIban);
   const [name, setName] = useState(initialName);
   const [lastName, setLastName] = useState(initialLastName);
   const [description, setDescription] = useState(initialDescription);
 
-  const increment = () => setCount(count + 1);
+  // const increment = () => setCount(count + 1);
 
   useEffect(() => {
     if (IBAN.isValid(iban)) {
       localStorage.clear();
     } else {
-      window.localStorage.setItem('count', count);
+      // window.localStorage.setItem('count', count);
       window.localStorage.setItem('iban', iban);
       window.localStorage.setItem('name', name);
       window.localStorage.setItem('lastName', lastName);
       window.localStorage.setItem('description', description);
     }
     setFormValid(name && lastName && IBAN.isValid(iban));
-  }, [isFormValid, count, iban, name, lastName, description]);
+  }, [isFormValid, iban, name, lastName, description]);
 
   // const [isIbanValid, setIsIbanValid] = useState(false);
 
@@ -76,6 +76,9 @@ const IbanChecker = ({ match }) => {
         </>
       ))}
       <div className="form-container">
+        <div>This is a test Formular. NO DATA will be save</div>
+        <div>Here some IBAN to test the form:</div>
+        <div>ES 91 2100 0418 45 0200051332 ----- DE 89 37040044 0532013000</div>
         <form className="form" action="">
           <p>
             <input
@@ -120,7 +123,7 @@ const IbanChecker = ({ match }) => {
           </h1>
           <p>
             <button className="form-btn" disabled={!isFormValid}>
-            {t('form.submit').toUpperCase()}
+              {t('form.submit').toUpperCase()}
             </button>
           </p>
         </form>

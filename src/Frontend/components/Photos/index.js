@@ -3,6 +3,7 @@ import ReactModal from 'react-modal';
 import { Route } from 'react-router-dom';
 import Breadcrumbs from 'shared/Breadcrumbs';
 import paths from 'paths';
+import { useTranslation } from 'react-i18next';
 
 import DSC01510 from 'assets/images/garden/DSC01510.webp';
 import DSC02099 from 'assets/images/garden/DSC02099.webp';
@@ -73,6 +74,7 @@ const modalStyles = {
 const Photos = ({ photos }) => {
   const [showModal, setShowModal] = useState(-1);
 
+  const { t } = useTranslation();
   return (
     <>
       <div className="main-container">
@@ -95,6 +97,24 @@ const Photos = ({ photos }) => {
             />
           </>
         ))}
+        <div className="header-container">
+          <div className="text-header-container">
+            <div className="text-header">{t('gartenProjekt-desc')}</div>
+            <div className="video-header">
+              <iframe
+                className="video-iframe"
+                title="active Gardening"
+                src="https://www.youtube.com/embed/NQAvgxPOjvE"
+                frameborder="0"
+                width="100%"
+                height="100%"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <hr class="solid"></hr>
         <div className="photo-gallery">
           {photos.map((photo, index) => (
             <>

@@ -1,3 +1,45 @@
+.header-container {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+
+.text-header-container {
+  width: 80vw;
+  display: flex;
+  height: auto;
+  flex: 1 1 0px;
+}
+
+.text-header {
+  width: 100%;
+  padding: 2rem;
+  margin: 1rem;
+  flex: 1 1 0px;
+}
+
+.video-header {
+  position: 'relative';
+  padding-bottom: '56.25%'; /* 16:9 */
+  width: 50%;
+  height: 100%;
+}
+
+/* .video-iframe {
+  position: 'absolute';
+  top: 0;
+  left: 0;
+  width: '1024px';
+  height: '768';
+} */
+
+hr.solid {
+  border-top: 3px solid #bbb;
+  width: 80vw;
+  margin: auto;
+}
+
 .photo-gallery {
   display: flex;
   top: 80px;
