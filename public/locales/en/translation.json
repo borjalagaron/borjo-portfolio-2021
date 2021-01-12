@@ -21404,6 +21404,7 @@
       "iban": "IBAN",
       "lastName": "Lastname",
       "description": "Description"
-    }
+    },
+    "submit": "Submit"
   }
 }

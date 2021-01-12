@@ -54,10 +54,6 @@ const IbanChecker = ({ match }) => {
     }
   };
 
-  const checkIsFormValid = () => {
-    return name && lastName && IBAN.isValid(iban);
-  };
-
   return (
     <div className="main-container">
       {paths.map(({ Component, title, url, cName }, key) => (
@@ -124,7 +120,7 @@ const IbanChecker = ({ match }) => {
           </h1>
           <p>
             <button className="form-btn" disabled={!isFormValid}>
-              SUBMIT FORM
+            {t('form.submit').toUpperCase()}
             </button>
           </p>
         </form>

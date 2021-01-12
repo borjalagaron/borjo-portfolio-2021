@@ -27,14 +27,14 @@ const paths = [
   },
   {
     component: lazy(() => import('./Frontend/components/Weather')),
-    title: 'Weather',
-    url: '/frontend/weather',
+    title: 'Weather App',
+    url: '/frontend/weatherApp',
     cName: '',
   },
   {
     component: lazy(() => import('./Frontend/components/Photos')),
     title: 'Garten Projekt',
-    url: '/frontend/photos',
+    url: '/frontend/gartenProjekt',
     cName: '',
   },
   {

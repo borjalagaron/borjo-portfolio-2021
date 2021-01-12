@@ -11,14 +11,14 @@ const Frontend = ({ match }) => {
   const { t } = useTranslation();
   const subRoutes = [
     {
-      name: 'photos',
+      name: 'gartenProjekt',
       component: lazy(() => import('./components/Photos')),
       title: t('projects.gardenPhotoGallery-title'),
       desc: t('projects.gardenPhotoGallery-desc'),
       thumbnail: weatherAppThumbnail,
     },
     {
-      name: 'weather',
+      name: 'weatherApp',
       component: lazy(() => import('./components/Weather')),
       title: t('projects.weatherApp-title'),
       desc: t('projects.weatherApp-desc'),

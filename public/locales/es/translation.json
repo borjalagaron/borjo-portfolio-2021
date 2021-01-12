@@ -2912,6 +2912,7 @@
       "name": "Nombre",
       "lastName": "Apellido",
       "description": "Descripción"
-    }
+    },
+    "submit": "Enviar"
   }
 }
