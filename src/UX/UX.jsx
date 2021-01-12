@@ -30,7 +30,7 @@ class UX extends Component {
               className="loading-logo"
               alt="Logo"
             /> */}
-            <Loading />
+            {/* <Loading /> */}
           </div>
         ) : (
           <div className="UX">
