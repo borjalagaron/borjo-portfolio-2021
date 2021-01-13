@@ -13,26 +13,28 @@
 }
 
 .text-header {
-  width: 100%;
-  padding: 2rem;
-  margin: 1rem;
   flex: 1 1 0px;
+  width: 100%;
+  margin: 1rem;
+  padding: 2rem;
+  font-weight: bold;
+  text-align: center;
 }
 
 .video-header {
-  position: 'relative';
-  padding-bottom: '56.25%'; /* 16:9 */
+  position: relative;
   width: 50%;
-  height: 100%;
+  height: 0;
+  max-height: 600px;
+  padding-bottom: 56.25%;
 }
 
-/* .video-iframe {
-  position: 'absolute';
+.video-iframe {
+  position: absolute;
   top: 0;
   left: 0;
-  width: '1024px';
-  height: '768';
-} */
+  width: 100%;
+}
 
 hr.solid {
   border-top: 3px solid #bbb;

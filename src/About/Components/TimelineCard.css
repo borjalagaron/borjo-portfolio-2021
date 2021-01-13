@@ -1,10 +1,14 @@
+:root {
+  --borjoBlack: #231f20;
+}
+
 .hidden-card {
   display: none;
 }
 
 .btn-timeline {
   background-color: white;
-  color: black;
+  color: var(--borjoBlack);
   padding: 10px;
   margin: 15px;
   flex: 1 1 0px;
@@ -12,7 +16,7 @@
 }
 
 .btn-timeline__active {
-  background-color: black;
+  background-color: var(--borjoBlack);
   color: white;
 }
 

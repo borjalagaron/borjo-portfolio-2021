@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './UX.css';
-import Loading from 'shared/Loading';
 
 class UX extends Component {
   constructor(props) {

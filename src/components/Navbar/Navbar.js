@@ -37,6 +37,7 @@ class Navbar extends Component {
                       <NavLink
                         className={item.cName}
                         to={item.url}
+                        exact={true}
                         // ARK better solution to this onClick?
                         onClick={this.handleClick}
                       >

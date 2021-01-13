@@ -35,14 +35,14 @@ const TimelineCard = (props) => {
         </time>
         {props.item.title ? (
           <h3 class="card__title r-title">
-            {t('timeline.' + props.year + '.' + props.item.title)}
+            <span className="underlined underlined--offset">
+              {t('timeline.' + props.year + '.' + props.item.title)}
+            </span>
           </h3>
         ) : null}
       </header>
       <div class="card__content ">
-        <span className="underlined underlined--offset">
-          {t('timeline.' + props.year + '.' + props.item.description)}
-        </span>
+        {t('timeline.' + props.year + '.' + props.item.description)}
       </div>
     </div>
   );

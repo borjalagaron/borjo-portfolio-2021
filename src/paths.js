@@ -33,7 +33,7 @@ const paths = [
   },
   {
     component: lazy(() => import('./Frontend/components/Photos')),
-    title: 'Garten Projekt',
+    title: 'Garten Projekt - Photo Exhibition',
     url: '/frontend/gartenProjekt',
     cName: '',
   },

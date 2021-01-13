@@ -99,16 +99,13 @@ const IbanChecker = ({ match }) => {
           <p>
             <textarea
               className="form-input"
-              id="w3review"
-              name="w3review"
               rows="4"
-              cols="50"
               placeholder={t('form.placeholder.description')}
               value={description}
               onChange={(input) => setDescription(input.target.value)}
             ></textarea>
           </p>
-          <p className="iban-input">
+          <p>
             <input
               className="form-input"
               placeholder={t('form.placeholder.iban')}

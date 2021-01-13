@@ -5,15 +5,15 @@ import Breadcrumbs from 'shared/Breadcrumbs';
 import paths from 'paths';
 import { useTranslation } from 'react-i18next';
 
-import DSC01510 from 'assets/images/garden/DSC01510.webp';
-import DSC02099 from 'assets/images/garden/DSC02099.webp';
-import DSC02201 from 'assets/images/garden/DSC02201.webp';
-import DSC02341 from 'assets/images/garden/DSC02341.webp';
-import DSC04026 from 'assets/images/garden/DSC04026.webp';
-import DSC04038 from 'assets/images/garden/DSC04038.webp';
-import DSC04102 from 'assets/images/garden/DSC04102.webp';
-import DSC04266 from 'assets/images/garden/DSC04266.webp';
-import ORG_DSC03181 from 'assets/images/garden/ORG_DSC03181.webp';
+import DSC01510 from 'assets/images/garden/thumbnails/DSC01510.webp';
+import DSC02099 from 'assets/images/garden/thumbnails/DSC02099.webp';
+import DSC02201 from 'assets/images/garden/thumbnails/DSC02201.webp';
+import DSC02341 from 'assets/images/garden/thumbnails/DSC02341.webp';
+import DSC04026 from 'assets/images/garden/thumbnails/DSC04026.webp';
+import DSC04038 from 'assets/images/garden/thumbnails/DSC04038.webp';
+import DSC04102 from 'assets/images/garden/thumbnails/DSC04102.webp';
+import DSC04266 from 'assets/images/garden/thumbnails/DSC04266.webp';
+import ORG_DSC03181 from 'assets/images/garden/thumbnails/ORG_DSC03181.webp';
 
 import './styles.css';
 
@@ -100,18 +100,18 @@ const Photos = ({ photos }) => {
         <div className="header-container">
           <div className="text-header-container">
             <div className="text-header">{t('gartenProjekt-desc')}</div>
-            <div className="video-header">
+            {/* <div className="video-header">
               <iframe
                 className="video-iframe"
                 title="active Gardening"
                 src="https://www.youtube.com/embed/NQAvgxPOjvE"
                 frameborder="0"
-                width="100%"
-                height="100%"
+                width="516"
+                height="315"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
               ></iframe>
-            </div>
+            </div> */}
           </div>
         </div>
         <hr class="solid"></hr>
