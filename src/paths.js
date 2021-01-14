@@ -7,18 +7,18 @@ const paths = [
     title: 'About Me',
     url: '/about',
   },
-  {
-    component: lazy(() => import('./Agile')),
-    title: 'Agile',
-    url: '/agile',
-    cName: 'nav-link',
-  },
-  {
-    component: lazy(() => import('./UX')),
-    title: 'UX',
-    url: '/ux',
-    cName: 'nav-link',
-  },
+  // {
+  //   component: lazy(() => import('./Agile')),
+  //   title: 'Agile',
+  //   url: '/agile',
+  //   cName: 'nav-link',
+  // },
+  // {
+  //   component: lazy(() => import('./UX')),
+  //   title: 'UX',
+  //   url: '/ux',
+  //   cName: 'nav-link',
+  // },
   {
     component: lazy(() => import('./Frontend')),
     title: 'FrontEnd',

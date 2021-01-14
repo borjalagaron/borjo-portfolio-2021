@@ -11,12 +11,12 @@ export const MenuItems = [
     url: '/about',
     cName: 'nav-link',
   },
-  {
-    title: 'Agile',
-    component: 'Agile',
-    url: '/agile',
-    cName: 'nav-link',
-  },
+  // {
+  //   title: 'Agile',
+  //   component: 'Agile',
+  //   url: '/agile',
+  //   cName: 'nav-link',
+  // },
   // {
   //   title: 'UX',
   //   component: 'UX',

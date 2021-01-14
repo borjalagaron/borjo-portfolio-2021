@@ -21,7 +21,8 @@
       "curiosity": "Neugierde",
       "goodHumor": "Guter Humor",
       "creativity": "Kreativität"
-    }
+    },
+    "text1": "Geboren und aufgewachsen in Madrid, verbessert in Stuttgart"
   },
   "quote": {
     "bullshit": "\"Die einzige Sache, die zwischen Dir und deinem Ziel steht, sind die Bullshit Ausreden, die du dir ständig selbst erzählt\"",
@@ -2070,7 +2071,8 @@
     null,
     null,
     {
-      "movedToGermany-desc": "🇪🇸 ➡️ 🇩🇪 Ich bin nach Stuttgart gezogen"
+      "movedToGermany-desc": "🇪🇸 ➡️ 🇩🇪 Ich bin nach Stuttgart gezogen",
+      "enicma-desc": "-HTML5\n-CSS3\n-JavaScript\n-XML"
     },
     null,
     null,
@@ -2078,7 +2080,8 @@
     null,
     null,
     {
-      "photoExhibition-desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dictum neque ac dictum iaculis. Fusce ligula magna, fermentum a pulvinar non, vehicula id nibh. Nulla feugiat cursus sollicitudin. In hac habitasse platea dictumst. Suspendisse dolor tellus, hendrerit at dui sed, auctor tempus erat. Proin non tincidunt dolor. Donec blandit quam at ante imperdiet consequat."
+      "photoExhibition-desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dictum neque ac dictum iaculis. Fusce ligula magna, fermentum a pulvinar non, vehicula id nibh. Nulla feugiat cursus sollicitudin. In hac habitasse platea dictumst. Suspendisse dolor tellus, hendrerit at dui sed, auctor tempus erat. Proin non tincidunt dolor. Donec blandit quam at ante imperdiet consequat.",
+      "photoExhibition-title": "Fotoausstellung - Garten Projekt"
     },
     null,
     {
@@ -2087,7 +2090,7 @@
     },
     {
       "portfolio-desc": "-ReactJS\n-Eigenes Design\n-Mehrsprachig (i18n)",
-      "portfolio-title": "Meine eigene Website veröffentlichen."
+      "portfolio-title": "Meine eigene Website veröffentlichen"
     }
   ],
   "button": {
@@ -2904,7 +2907,11 @@
   ],
   "projects": {
     "gardenPhotoGallery-title": "Garten Projekt - Fotoaustellung",
-    "weatherApp-title": "Wetter App"
+    "weatherApp-title": "Wetter App",
+    "gardenPhotoGallery-desc": "Fotogalerie",
+    "ibanChecker-title": "Formular Beispiel",
+    "weatherApp-desc": "Formular Beispiel",
+    "ibanChecker-desc": "-Internationale IBAN-Überprüfung\n-Verwendung von localStorage, wenn der Benutzer nicht fertig ist"
   },
   "home": {},
   "form": {

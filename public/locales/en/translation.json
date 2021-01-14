@@ -21,7 +21,8 @@
       "curiosity": "Curiosity",
       "goodHumor": "Good Humor",
       "creativity": "Creativity"
-    }
+    },
+    "text1": "Born and raised in Madrid, improved in Stuttgart, Germany"
   },
   "quote": {
     "bullshit": "\"The only thing standing between you and your goal is the bullshit story you keep telling yourself as to why you can’t achieve it\"",
@@ -2070,7 +2071,7 @@
     null,
     null,
     {
-      "enicma-desc": "XML",
+      "enicma-desc": "-HTML5\n-CSS3\n-JavaScript\n-XML",
       "enicma-title": "FrontEnd Developer @ Enicma (Munich)",
       "movedToGermany-desc": "🇪🇸 ➡️ 🇩🇪 I moved to Stuttgart, Germany"
     },
@@ -2084,7 +2085,7 @@
     null,
     {
       "photoExhibition-desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dictum neque ac dictum iaculis. Fusce ligula magna, fermentum a pulvinar non, vehicula id nibh. Nulla feugiat cursus sollicitudin. In hac habitasse platea dictumst. Suspendisse dolor tellus, hendrerit at dui sed, auctor tempus erat. Proin non tincidunt dolor. Donec blandit quam at ante imperdiet consequat.",
-      "photoExhibition-title": "Title Exhibition"
+      "photoExhibition-title": "Photo Exhibition - Garten Projekt"
     },
     {
       "languageExchange-title": "Language Exchange :)",
@@ -21395,7 +21396,11 @@
   ],
   "projects": {
     "gardenPhotoGallery-title": "Garten Projekt - Photo Exhibition",
-    "weatherApp-title": "Weather App"
+    "weatherApp-title": "Weather App",
+    "gardenPhotoGallery-desc": "Photogallery",
+    "ibanChecker-title": "Formular example",
+    "weatherApp-desc": "Formular example-International IBAN checking\n\n-Use of localStorage when user didn't finished",
+    "ibanChecker-desc": "-International IBAN checking\n-Use of localStorage when user didn't finished"
   },
   "home": {},
   "form": {

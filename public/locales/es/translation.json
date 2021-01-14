@@ -21,7 +21,8 @@
       "curiosity": "Curiosidad",
       "goodHumor": "Buen humor",
       "creativity": "Creatividad"
-    }
+    },
+    "text1": "Nacido y criado en Madrid, mejorado en Stuttgart, Alemania"
   },
   "quote": {
     "bullshit": "\"Lo único que está entre tu meta y tú, es la historia que te sigues contando a ti mismo de por qué no lo puedes lograr\"",
@@ -2070,7 +2071,8 @@
     null,
     null,
     {
-      "movedToGermany-desc": "🇪🇸 ➡️ 🇩🇪 Me mudé a Stuttgart, Alemania"
+      "movedToGermany-desc": "🇪🇸 ➡️ 🇩🇪 Me mudé a Stuttgart, Alemania",
+      "enicma-desc": "-HTML5\n-CSS3\n-JavaScript\n-XML"
     },
     null,
     null,
@@ -2078,7 +2080,8 @@
     null,
     null,
     {
-      "photoExhibition-desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dictum neque ac dictum iaculis. Fusce ligula magna, fermentum a pulvinar non, vehicula id nibh. Nulla feugiat cursus sollicitudin. In hac habitasse platea dictumst. Suspendisse dolor tellus, hendrerit at dui sed, auctor tempus erat. Proin non tincidunt dolor. Donec blandit quam at ante imperdiet consequat."
+      "photoExhibition-desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dictum neque ac dictum iaculis. Fusce ligula magna, fermentum a pulvinar non, vehicula id nibh. Nulla feugiat cursus sollicitudin. In hac habitasse platea dictumst. Suspendisse dolor tellus, hendrerit at dui sed, auctor tempus erat. Proin non tincidunt dolor. Donec blandit quam at ante imperdiet consequat.",
+      "photoExhibition-title": "Exposición Fotográfica - Garten Projekt"
     },
     null,
     {
@@ -2904,7 +2907,11 @@
   ],
   "projects": {
     "gardenPhotoGallery-title": "Garten Projekt - Exposición Fotográfica",
-    "weatherApp-title": "Tiempo App"
+    "weatherApp-title": "Tiempo App",
+    "gardenPhotoGallery-desc": "Galeria de fotos",
+    "ibanChecker-title": "Formulario de ejemplo",
+    "weatherApp-desc": "Ejemplo de formulario",
+    "ibanChecker-desc": "-Check de IBAN internacional\n-Uso de localStorage cuando el usuario no terminó"
   },
   "home": {},
   "form": {

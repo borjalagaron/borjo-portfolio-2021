@@ -23,11 +23,7 @@ const About = () => {
       <div className="about-img"></div>
       <div className="about-desc">
         <div className="about-desc-title">
-          {t('hero.desc1')}{' '}
-          <span className="underlined underlined--offset">
-            {t('hero.productOwner')}
-          </span>{' '}
-          {t('hero.desc2')}
+          {t('about.text1')}
         </div>
         <Timeline timelineItems={TimelineItems} />
       </div>
